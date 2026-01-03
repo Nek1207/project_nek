@@ -429,3 +429,37 @@ button, button:hover, button:active { transition: all .4s; }
     transform: translateY(0);
   }
 }
+
+@media (max-width: 1600px) {
+    .card {
+        width: 60vw;
+        min-height: 200px;
+    }
+}
+@media (max-width: 1200px) {
+    .card {
+        width: 85vw;
+        min-height: 200px;
+    }
+}
+@media (max-width: 900px) {
+    .card {
+        width: 60vw;
+        min-height: 200px;
+    }
+    #trackName {
+        font-size: 1.25rem;
+    }
+    h2 {
+        font-size: 0.75rem;
+    }
+    #authorName {
+        margin-left: .05rem;
+        font-size: 1rem;
+    }
+    img, .circle {
+        width: 20px;
+        height: 20px;
+    }
+
+}

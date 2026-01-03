@@ -579,4 +579,36 @@ button, button:hover, button:active {
     opacity: 1;
     transform: translateY(0);
   }
+}
+@media (max-width: 1600px) {
+  .card {
+    width: 60vw;
+    min-height: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  .card {
+    width: 85vw;
+    min-height: 200px;
+  }
+}
+@media (max-width: 900px) {
+  .card {
+    width: 60vw;
+    min-height: 200px;
+  }
+  #trackName {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 0.75rem;
+  }
+  #authorName {
+    margin-left: 0.05rem;
+    font-size: 1rem;
+  }
+  img, .circle {
+    width: 20px;
+    height: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */
