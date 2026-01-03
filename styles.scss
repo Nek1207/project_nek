@@ -140,7 +140,7 @@ h5 {
     width: 60%;
     min-height: 100px;
     height: auto;
-    gap: 3rem;
+    gap: 1rem;
     margin: .5rem;
 }
 .navigation a {
@@ -155,6 +155,10 @@ h5 {
     font-weight: 700;
     text-align: center;
 }
+.navigation a img {
+    width: 75%;
+    height: 75%;
+}
 .navigation__links {
     width: 50%;
     height: 100%;
@@ -162,7 +166,7 @@ h5 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 .navigation__logo {
     width: 100%;
@@ -304,13 +308,20 @@ button, button:hover, button:active { transition: all .4s; }
 }
 
 .open-modal {
+  width: 40px;
+  height: 40px;
   padding: 0;
   border: none;
   background: none;
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  margin: 40px;
+  margin: 0;
+}
+
+.open-modal img {
+    width: 100%;
+    height: 100%;
 }
 
 /* Фон модалки */
@@ -431,6 +442,9 @@ button, button:hover, button:active { transition: all .4s; }
 }
 
 @media (max-width: 1600px) {
+    .line {
+        display: none;
+    }
     .card {
         width: 60vw;
         min-height: 200px;
@@ -444,11 +458,19 @@ button, button:hover, button:active { transition: all .4s; }
 }
 @media (max-width: 900px) {
     .card {
-        width: 60vw;
-        min-height: 200px;
+        width: 85vw;
+        min-height: 100px;
+        height: 150px;
+    }
+    .open-modal {
+        min-width: 30px;
+        min-height: 30px;
     }
     #trackName {
         font-size: 1.25rem;
+    }
+    ol h3 {
+        font-size: 2rem;
     }
     h2 {
         font-size: 0.75rem;
@@ -461,5 +483,102 @@ button, button:hover, button:active { transition: all .4s; }
         width: 20px;
         height: 20px;
     }
+    #detailed {
+        margin: 1rem;
+        gap: 1rem;
+        list-style-type: none;
+        counter-reset: mycounter;
+    }
+    #detailed li {
+        margin-left: -3.5rem;
+        font-size: 1.5rem;
+    }
+    #detailed li::before {
+        position: relative;
+        width: 50px !important;
+        height: 50px !important;
+        top: 0;
+        content: counter(mycounter);
+        counter-increment: mycounter;
+    }
+    .card__title h1 {
+        margin-bottom: 0rem;
+        margin-left: 3.5rem;
+    }
+    .card__title {
+        height: 50px;
+    }
+    .card__description div a,
+    .card__description div {
+        font-size: .75rem;
+    }
+    .card__description #difficulty {
+        margin-top: 0;
+    }
+    .card__description {
+        margin-top: 1rem;
+    }
+    .card {
+        padding: 1rem 1rem 1rem 4.5rem;
+    }
+}
 
+@media (max-width: 600px) {
+    img, .circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .card {
+        padding: 1rem 1rem 1rem 4.5rem;
+        min-height: 100px;
+        height: auto;
+    }
+    #detailed li {
+        margin-left: -3.5rem;
+        font-size: 1.25rem;
+    }
+    #detailed li::before {
+        position: relative;
+        width: 20px !important;
+        height: 20px !important;
+        top: 0;
+        content: counter(mycounter);
+        counter-increment: mycounter;
+    }
+    .card__title h1 {
+        margin-bottom: 0rem;
+        margin-left: 3.5rem;
+    }
+    .card__description {
+        height: auto;
+    }
+    #trackName {
+        margin-top: 1.5rem;
+        display: block;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        // line-height: 0px;
+        max-height: 40px;
+    }
+    ol h3 {
+        font-size: 1.25rem;
+    }
+    h2 {
+        font-size: 0.5rem;
+    }
+    #authorName {
+        margin-left: .05rem;
+        font-size: 0.75rem;
+    }
+    .card__description {
+        gap: .5rem;
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+    .card__description #difficulty { width: 50%; }
+    .card__description #duration { width: 25%; }
+    .card__description #foundYear { width: 25%; }
+    .card__description #repeatings { width: 25%; }
+    .card__description #link { width: 25%; }
 }
