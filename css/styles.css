@@ -305,15 +305,6 @@ h5 {
   counter-increment: mycounter;
 }
 
-#fast {
-  text-align: left;
-  justify-content: start;
-  align-items: start;
-  width: 90%;
-  gap: 0.5rem;
-  padding-left: 2rem;
-}
-
 .card__inner {
   display: flex;
   flex-direction: column;
@@ -413,6 +404,15 @@ ol h3 {
   margin: 0;
   padding: 0;
   height: 1.5rem;
+}
+
+#fast {
+  text-align: left;
+  justify-content: start;
+  align-items: start;
+  width: 90%;
+  gap: 0.5rem;
+  padding-left: 2rem !important;
 }
 
 .line {
