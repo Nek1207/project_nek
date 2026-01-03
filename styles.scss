@@ -176,12 +176,6 @@ h5 {
     width: 100%;
     height: 100%;
 }
-#fast {
-    text-align: left;
-    align-items: start;
-    margin-left: 7.5rem;
-    gap: .5rem;
-}
 #detailed {
     margin: 2rem;
     gap: 2rem;
@@ -198,12 +192,13 @@ h5 {
     content: counter(mycounter);
     counter-increment: mycounter;
 }
-#short {
+#fast  {
     text-align: left;
     justify-content: start;
     align-items: start;
     width: 90%;
-}
+    gap: .5rem;
+} 
 .card__inner {
     display: flex;
     flex-direction: column;
@@ -406,6 +401,7 @@ button, button:hover, button:active { transition: all .4s; }
     border-left: 2px solid $gray;
     border-bottom: 2px solid $gray;
 }
+
 
 @keyframes omg {
     from {

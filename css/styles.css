@@ -286,13 +286,6 @@ h5 {
   height: 100%;
 }
 
-#fast {
-  text-align: left;
-  align-items: start;
-  margin-left: 7.5rem;
-  gap: 0.5rem;
-}
-
 #detailed {
   margin: 2rem;
   gap: 2rem;
@@ -312,11 +305,12 @@ h5 {
   counter-increment: mycounter;
 }
 
-#short {
+#fast {
   text-align: left;
   justify-content: start;
   align-items: start;
   width: 90%;
+  gap: 0.5rem;
 }
 
 .card__inner {
