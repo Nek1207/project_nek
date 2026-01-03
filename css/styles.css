@@ -311,6 +311,7 @@ h5 {
   align-items: start;
   width: 90%;
   gap: 0.5rem;
+  padding-left: 2rem;
 }
 
 .card__inner {
