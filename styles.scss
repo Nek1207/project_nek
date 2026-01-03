@@ -457,6 +457,22 @@ button, button:hover, button:active { transition: all .4s; }
     }
 }
 @media (max-width: 900px) {
+    .modal__dialog {
+        gap: 1rem;
+        max-width: 85vw;
+        width: 100%;
+        padding: 1rem;
+        min-height: 200px;
+        height: auto;
+    }
+    .modal__title {
+        margin: 0 0 .25rem;
+        font-size: 1.5rem;
+    }
+    .modal__text {
+        margin: 0 0 .5rem;
+        font-size: 1rem;
+    }
     .card {
         width: 85vw;
         min-height: 100px;
