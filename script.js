@@ -56,9 +56,9 @@ function setTheme(index) {
 
   if (theme === "light") {
     console.log('image light');
-    openBtn.innerHTML = `<img src="./images/informationAlt.svg">`;
-    logotype.innerHTML = `<img src="./images/logoAlt.svg">`;
-    title.innerHTML = `<img src="./images/titleLight.svg">`;
+    openBtn.innerHTML = `<img src="./images/informationalt.svg">`;
+    logotype.innerHTML = `<img src="./images/logoalt.svg">`;
+    title.innerHTML = `<img src="./images/titlelight.svg">`;
     
     whiteIcon.forEach(element => {
       element.style.display = 'none';
@@ -75,7 +75,7 @@ function setTheme(index) {
     console.log('image dark');
     openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
-    title.innerHTML = `<img src="./images/titleDark.svg">`; 
+    title.innerHTML = `<img src="./images/titledark.svg">`; 
 
     whiteIcon.forEach(element => {
       element.style.display = 'block';
@@ -91,7 +91,7 @@ function setTheme(index) {
     console.log('image oled');
     openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
-    title.innerHTML = `<img src="./images/titleOLED.svg">`;
+    title.innerHTML = `<img src="./images/titleoled.svg">`;
 
     whiteIcon.forEach(element => {
       element.style.display = 'block';
