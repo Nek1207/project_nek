@@ -5,6 +5,19 @@ const ModalBtnOK = document.getElementById("ModalBtnOK");
 
 const isBasedSolely = document.getElementById('isBasedSolely');
 
+const duration = document.querySelectorAll('duration');
+const foundYear = document.querySelectorAll('foundYear');
+const repeatings = document.querySelectorAll('repeatings');
+const link = document.querySelectorAll('link');
+
+
+
+const youtubeLink = document.querySelectorAll('youtube');
+const yandexMusicLink = document.querySelectorAll('yandexMusic');
+const bandcampLink = document.querySelectorAll('bandcampLink');
+const vkLink = document.querySelectorAll('vkLink');
+
+
 isBasedSolely.addEventListener("click", () => {
   
   if (isBasedSolely.classList.contains('omg')) {
@@ -17,6 +30,57 @@ isBasedSolely.addEventListener("click", () => {
 
 
 });
+
+const logotype = document.getElementById('logotype');
+const title = document.getElementById('title');
+const themeToggle = document.getElementById('themeToggle');
+// const colorMode = document.getElementById('colorMode');
+const html = document.documentElement;
+
+const themes = ['light', 'dark', 'oled'];
+const labels = ['light', 'dark', 'OLED'];
+
+function getCurrentThemeIndex() {
+  return themes.indexOf(localStorage.getItem('theme') || 'light');
+}
+
+function setTheme(index) {
+  const theme = themes[index];
+  
+  localStorage.setItem('theme', theme);
+  html.setAttribute('data-theme', theme);
+  themeToggle.innerHTML = `<div id="colorMode" class="${theme}"></div>`;
+  // themeToggle.textContent = `${labels[index]}`;
+
+  if (theme === "light") {
+    console.log('image light');
+    openBtn.innerHTML = `<img src="./images/informationAlt.svg">`;
+    logotype.innerHTML = `<img src="./images/logoAlt.svg">`;
+    title.innerHTML = `<img src="./images/titleLight.svg">`;
+  }
+  if (theme === "dark") {
+    console.log('image dark');
+    openBtn.innerHTML = `<img src="./images/information.svg">`;
+    logotype.innerHTML = `<img src="./images/logo.svg">`;
+    title.innerHTML = `<img src="./images/titleDark.svg">`;
+  }
+  if (theme === "oled") {
+    console.log('image oled');
+    openBtn.innerHTML = `<img src="./images/information.svg">`;
+    logotype.innerHTML = `<img src="./images/logo.svg">`;
+    title.innerHTML = `<img src="./images/titleOLED.svg">`;
+  }
+
+}
+
+themeToggle.addEventListener('click', () => {
+  const currentIndex = getCurrentThemeIndex();
+  const nextIndex = (currentIndex + 1) % 3;
+  setTheme(nextIndex);
+});
+
+setTheme(getCurrentThemeIndex());
+
 
 
 // открыть модалку

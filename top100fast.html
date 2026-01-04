@@ -8,12 +8,15 @@
 </head>
 <body>
     <nav class="navigation">
-        <a target="_blank" href="https://t.me/project_nek_official"><img src="./images/logo.svg"></a>
+        <a id="logotype" target="_blank" href="https://t.me/project_nek_official"><img src="./images/logo.svg"></a>
         <div class="navigation__links">
             <a href="./index.html">detailed</a>
             <a href="./top100fast.html">fast</a>
         </div>
-        <button class="open-modal" id="openModalBtn"><img src="./images/information.svg" alt="info"></button>
+        <div class="navigation__controls">
+            <button class="open-modal" id="openModalBtn"><img src="./images/information.svg" alt="info"></button>
+            <button id="themeToggle" class="theme-toggle" type="button" data-state="0"></button>
+        </div>
     </nav>
     <div class="modal" id="modal">
     <div class="modal__dialog">
@@ -24,8 +27,8 @@
         <button id="ModalBtnOK" class="modal__action">Got it</button>
     </div>
     </div>
-    <div class="title">
-        <img src="./images/background.svg">
+    <div id="title" class="title">
+        <img src="./images/titleOLED.svg">
     </div>
 
 

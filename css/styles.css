@@ -1,11 +1,26 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root[data-theme=light] {
+  --white: #0D0D0D;
+  --black: #FAFAFA;
+}
+
+:root[data-theme=dark] {
+  --white: #FAFAFA;
+  --black: #0D0D0D;
+}
+
+:root[data-theme=oled] {
+  --white: #FAFAFA;
+  --black: #000000;
+}
+
 .white {
-  color: #FAFAFA;
+  color: var(--white);
 }
 
 .black {
-  color: #0D0D0D;
+  color: var(--black);
 }
 
 .gray {
@@ -55,17 +70,17 @@
 .circle {
   width: 25px;
   height: 25px;
-  background-color: #FAFAFA;
+  background-color: var(--white);
   color: transparent;
   border-radius: 50%;
 }
 
 .white .circle {
-  background-color: #FAFAFA;
+  background-color: var(--white);
 }
 
 .black .circle {
-  background-color: #0D0D0D;
+  background-color: var(--black);
 }
 
 .gray .circle {
@@ -113,11 +128,11 @@
 }
 
 .white .line {
-  background-color: #FAFAFA;
+  background-color: var(--white);
 }
 
 .black .line {
-  background-color: #0D0D0D;
+  background-color: var(--black);
 }
 
 .gray .line {
@@ -174,7 +189,7 @@
 }
 
 body, ol, ul {
-  background-color: #0D0D0D;
+  background-color: var(--black);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,26 +207,26 @@ body, ol, ul {
   min-height: 200px;
   height: 200px;
   padding: 1rem 2rem 1rem 5rem;
-  color: #FAFAFA;
-  background: linear-gradient(190deg, #FAFAFA 0%, #0D0D0D 35%);
+  color: var(--white);
+  background: linear-gradient(190deg, var(--white) 0%, var(--black) 35%);
   border-left: 2px solid #4F4F4F;
   border-bottom: 2px solid #4F4F4F;
 }
 
 .card:nth-child(2) {
-  background: linear-gradient(190deg, #662E9B 0%, #0D0D0D 35%);
+  background: linear-gradient(190deg, #662E9B 0%, var(--black) 35%);
   border-left: 4px solid #662E9B;
   border-bottom: 4px solid #2D0C2F;
 }
 
 .card:nth-child(3) {
-  background: linear-gradient(190deg, #B9F2FF 0%, #0D0D0D 35%);
+  background: linear-gradient(190deg, #B9F2FF 0%, var(--black) 35%);
   border-left: 4px solid #B9F2FF;
   border-bottom: 4px solid #80FFDB;
 }
 
 .card:nth-child(4) {
-  background: linear-gradient(190deg, #ffd60a 0%, #0D0D0D 35%);
+  background: linear-gradient(190deg, #ffd60a 0%, var(--black) 35%);
   border-left: 4px solid #ffd60a;
   border-bottom: 4px solid #ffc300;
 }
@@ -236,7 +251,7 @@ body, ol, ul {
   color: #ffd60a;
 }
 
-#trackName {
+.trackName {
   font-size: 2rem;
 }
 
@@ -244,7 +259,7 @@ h2 {
   font-size: 1rem;
 }
 
-#authorName {
+.authorName {
   margin-left: 0.1rem;
   font-size: 1.25rem;
 }
@@ -262,7 +277,7 @@ h2 {
 .levels {
   transition: all 0.4s;
   width: 20%;
-  background: linear-gradient(235deg, #FAFAFA 0%, #0D0D0D 35%);
+  background: linear-gradient(235deg, var(--white) 0%, var(--black) 35%);
   border-left: 2px solid #4F4F4F;
   border-bottom: 2px solid #4F4F4F;
   border-radius: 1.5rem;
@@ -280,7 +295,7 @@ h2 {
 }
 
 li, p, h1, h2, a {
-  color: #FAFAFA;
+  color: var(--white);
   text-decoration: none;
   font-weight: 700;
 }
@@ -325,7 +340,7 @@ h5 {
   align-items: center;
   width: 15%;
   height: 100px;
-  color: #FAFAFA;
+  color: var(--white);
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
@@ -342,6 +357,14 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navigation__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -433,27 +456,27 @@ h5 {
   font-weight: 700;
 }
 
-.card__description #difficulty {
+.card__description .difficulty {
   width: 20%;
 }
 
-.card__description #duration {
+.card__description .duration {
   width: 15%;
 }
 
-.card__description #foundYear {
+.card__description .foundYear {
   width: 15%;
 }
 
-.card__description #repeatings {
+.card__description .repeatings {
   width: 15%;
 }
 
-.card__description #link {
+.card__description .link {
   width: 35%;
 }
 
-#difficulty {
+.difficulty {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -492,8 +515,8 @@ ol h3 {
 
 .line {
   position: relative;
-  color: #0D0D0D;
-  background-color: #FAFAFA;
+  color: var(--black);
+  background-color: var(--white);
   width: 50vw;
   top: -1.5rem;
   left: 15vw;
@@ -523,7 +546,8 @@ button:hover {
 }
 
 .open-modal {
-  width: 2%;
+  width: 30px;
+  height: 30px;
   padding: 0;
   border: none;
   background: none;
@@ -570,8 +594,8 @@ button:hover {
   border-radius: 1.5rem;
   min-height: 200px;
   height: auto;
-  color: #FAFAFA;
-  background: linear-gradient(190deg, #FAFAFA 0%, #0D0D0D 35%);
+  color: var(--white);
+  background: linear-gradient(190deg, var(--white) 0%, var(--black) 35%);
   border-left: 2px solid #4F4F4F;
   border-bottom: 2px solid #4F4F4F;
 }
@@ -601,7 +625,38 @@ button:hover {
 .modal__text {
   margin: 0 0 1rem;
   font-size: 1rem;
-  color: #FAFAFA;
+  color: var(--white);
+}
+
+#themeToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+}
+
+.dark {
+  background-color: #0D0D0D;
+}
+
+.oled {
+  background-color: #000000;
+}
+
+.light {
+  background-color: #FAFAFA;
+}
+
+#colorMode {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
 }
 
 .modal__action {
@@ -611,9 +666,9 @@ button:hover {
   min-height: 50px;
   height: 50px;
   padding: 0.5rem;
-  color: #FAFAFA;
+  color: var(--white);
   font-weight: 700;
-  background: linear-gradient(190deg, #FAFAFA 0%, #0D0D0D 35%);
+  background: linear-gradient(190deg, var(--white) 0%, var(--black) 35%);
   border-left: 2px solid #4F4F4F;
   border-bottom: 2px solid #4F4F4F;
 }
@@ -724,7 +779,7 @@ button:hover {
     min-width: 30px;
     min-height: 30px;
   }
-  #trackName {
+  .trackName {
     font-size: 1.25rem;
   }
   ol h3 {
@@ -733,7 +788,7 @@ button:hover {
   h2 {
     font-size: 0.75rem;
   }
-  #authorName {
+  .authorName {
     margin-left: 0.05rem;
     font-size: 1rem;
   }
@@ -770,7 +825,7 @@ button:hover {
   .card__description div {
     font-size: 0.75rem;
   }
-  .card__description #difficulty {
+  .card__description .difficulty {
     margin-top: 0;
   }
   .card__description {
@@ -809,7 +864,7 @@ button:hover {
   .card__description {
     height: auto;
   }
-  #trackName {
+  .trackName {
     margin-top: 1.5rem;
     display: block;
     font-size: 1rem;
@@ -822,7 +877,7 @@ button:hover {
   h2 {
     font-size: 0.5rem;
   }
-  #authorName {
+  .authorName {
     margin-left: 0.05rem;
     font-size: 0.75rem;
   }
@@ -831,19 +886,19 @@ button:hover {
     margin-top: 0;
     flex-wrap: wrap;
   }
-  .card__description #difficulty {
+  .card__description .difficulty {
     width: 50%;
   }
-  .card__description #duration {
+  .card__description .duration {
     width: 25%;
   }
-  .card__description #foundYear {
+  .card__description .foundYear {
     width: 25%;
   }
-  .card__description #repeatings {
+  .card__description .repeatings {
     width: 25%;
   }
-  .card__description #link {
+  .card__description .link {
     width: 25%;
   }
 }/*# sourceMappingURL=styles.css.map */
