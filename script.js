@@ -5,18 +5,19 @@ const ModalBtnOK = document.getElementById("ModalBtnOK");
 
 const isBasedSolely = document.getElementById('isBasedSolely');
 
-const duration = document.querySelectorAll('duration');
-const foundYear = document.querySelectorAll('foundYear');
-const repeatings = document.querySelectorAll('repeatings');
-const link = document.querySelectorAll('link');
+const duration = document.querySelectorAll('.duration');
+const foundYear = document.querySelectorAll('.foundYear');
+const repeatings = document.querySelectorAll('.repeatings');
+const link = document.querySelectorAll('.link');
 
 
-
-const youtubeLink = document.querySelectorAll('youtube');
-const yandexMusicLink = document.querySelectorAll('yandexMusic');
-const bandcampLink = document.querySelectorAll('bandcampLink');
-const vkLink = document.querySelectorAll('vkLink');
-
+const whiteIcon = document.querySelectorAll('.whiteicon, .whiteIcon, .lightIcon, .lighticon');
+const darkIcon = document.querySelectorAll('.darkicon, .darkIcon');
+const OLEDIcon = document.querySelectorAll('.OLEDIcon, .OLEDicon, .oledicon');
+const youtubeLink = document.querySelectorAll('.youtube');
+const yandexMusicLink = document.querySelectorAll('.yandexMusic');
+const bandcampLink = document.querySelectorAll('.bandcampLink');
+const vkLink = document.querySelectorAll('.vkLink');
 
 isBasedSolely.addEventListener("click", () => {
   
@@ -31,6 +32,7 @@ isBasedSolely.addEventListener("click", () => {
 
 });
 
+const levels = document.querySelector('levels');
 const logotype = document.getElementById('logotype');
 const title = document.getElementById('title');
 const themeToggle = document.getElementById('themeToggle');
@@ -57,18 +59,49 @@ function setTheme(index) {
     openBtn.innerHTML = `<img src="./images/informationAlt.svg">`;
     logotype.innerHTML = `<img src="./images/logoAlt.svg">`;
     title.innerHTML = `<img src="./images/titleLight.svg">`;
+    
+    whiteIcon.forEach(element => {
+      element.style.display = 'none';
+    }); 
+    darkIcon.forEach(element => {
+      element.style.display = 'block';
+    });
+    OLEDIcon.forEach(element => {
+      element.style.display = 'none';
+    }); 
+
   }
   if (theme === "dark") {
     console.log('image dark');
     openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
-    title.innerHTML = `<img src="./images/titleDark.svg">`;
+    title.innerHTML = `<img src="./images/titleDark.svg">`; 
+
+    whiteIcon.forEach(element => {
+      element.style.display = 'block';
+    }); 
+    darkIcon.forEach(element => {
+      element.style.display = 'none';
+    }); 
+    OLEDIcon.forEach(element => {
+      element.style.display = 'none';
+    }); 
   }
   if (theme === "oled") {
     console.log('image oled');
     openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
     title.innerHTML = `<img src="./images/titleOLED.svg">`;
+
+    whiteIcon.forEach(element => {
+      element.style.display = 'block';
+    }); 
+    darkIcon.forEach(element => {
+      element.style.display = 'none';
+    }); 
+    OLEDIcon.forEach(element => {
+      element.style.display = 'block';
+    }); 
   }
 
 }

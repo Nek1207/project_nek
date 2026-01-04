@@ -16,12 +16,12 @@ $fatal: #80FFDB;
 
 $themes: (
   light: (
-    white: #0D0D0D,
+    white: #0F0F0F,
     black: #FAFAFA
   ),
   dark: (
     white: #FAFAFA,
-    black: #0D0D0D
+    black: #0F0F0F
   ),
   oled: (
     white: #FAFAFA,
@@ -100,6 +100,7 @@ $themes: (
     cursor: default;
 }
 body, ol, ul {
+    transition: all .25s;
     background-color: var(--black);
     display: flex;
     flex-direction: column;
@@ -109,7 +110,7 @@ body, ol, ul {
     width: 100%;
 }
 .card {
-    transition: all .4s;
+    transition: all .25s;
     transform: translateY(0rem);
     margin: 0 auto;
     width: 75%;
@@ -142,7 +143,7 @@ body, ol, ul {
     border-bottom: 4px solid #ffc300;
 }
 .card:hover {
-    transition: all .4s;
+    transition: all .25s;
     transform: translateY(-.5rem);
 }
 
@@ -171,7 +172,7 @@ h2 {
     padding: 3rem;
 }
 .levels {
-    transition: all .4s;
+    transition: all .25s;
     width: 20%;
     background: 
     linear-gradient(235deg, var(--white) 0%, var(--black) 35%);
@@ -181,7 +182,7 @@ h2 {
     transform: translateY(0rem);
 }
 .levels:hover {
-    transition: all .4s;
+    transition: all .25s;
     transform: translateY(-.5rem);
 }
 .levels-img {
@@ -386,17 +387,17 @@ ol h3 {
     border-bottom-right-radius: 2rem;
 }
 
-button, button:hover, button:active { transition: all .4s; transform: translateY(0); }
+button, button:hover, button:active { transition: all .25s; transform: translateY(0); }
 #isBasedSolely {
-    transition: all .4s;
+    transition: all .25s;
 }
 
 button:hover {
-    transition: all .4s;
+    transition: all .25s;
     transform: translateY(-.5rem);
 }
 #isBasedSolely:hover {
-    transition: all .4s;
+    transition: all .25s;
     color: $fatal;
 }
 
@@ -458,7 +459,7 @@ button:hover {
 
 
 .omg {
-    transition: all .4s;
+    transition: all .25s;
     animation: omg .5s ease-in-out infinite forwards;
 }
 
@@ -499,7 +500,7 @@ button:hover {
 }
 
 
-.dark { background-color: #0D0D0D; }
+.dark { background-color: #0F0F0F; }
 .oled { background-color: #000000; }
 .light { background-color: #FAFAFA; }
 
