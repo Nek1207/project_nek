@@ -192,3 +192,36 @@ function setYear() {
 
 
 }
+
+
+
+const showHideTitles = document.getElementById('showHideTitles');
+
+showHideTitles.addEventListener('click', () => {
+  showHideTitles.classList.toggle('active');
+  const isActive = showHideTitles.classList.contains('active');
+  console.log(isActive);
+  showHideTitles.textContent = isActive ? 'Show titles' : 'Hide titles';
+
+  if (isActive) {
+    fatalTitle.style.display = 'none';
+    extremeTitle.style.display = 'none';
+    atrociousTitle.style.display = 'none';
+    insaneTitle.style.display = 'none';
+    harsherTitle.style.display = 'none';
+    harshTitle.style.display = 'none';
+    mediumTitle.style.display = 'none';
+
+
+  } else {
+    fatalTitle.style.display = 'block';
+    extremeTitle.style.display = 'block';
+    atrociousTitle.style.display = 'block';
+    insaneTitle.style.display = 'block';
+    harsherTitle.style.display = 'block';
+    harshTitle.style.display = 'block';
+    mediumTitle.style.display = 'block';
+
+
+  }
+});
