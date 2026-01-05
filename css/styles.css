@@ -797,8 +797,19 @@ option {
     width: 90%;
     padding: 0.5rem;
   }
+  .informationBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
   .levels {
-    width: 40%;
+    margin-top: 2rem;
+    width: 50%;
+  }
+  .year {
+    width: 100%;
   }
   #detailed {
     justify-content: center;
@@ -896,9 +907,17 @@ option {
     width: 15px;
     height: 15px;
   }
+  #detailed {
+    padding: 0;
+    margin: 0;
+  }
+  .detailedMusicMain {
+    padding: 0;
+  }
   .card {
-    padding: 1rem 1rem 1rem 4.5rem;
-    min-height: 100px;
+    padding: 0.85rem 0.85rem 0.85rem 4.5rem;
+    width: 90vw;
+    min-height: 180px;
     height: auto;
   }
   #detailed li {
@@ -913,8 +932,11 @@ option {
     content: counter(mycounter);
     counter-increment: mycounter;
   }
+  .card__title {
+    margin-bottom: 1rem;
+  }
   .card__title h1 {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     margin-left: 3.5rem;
   }
   .card__description {
@@ -943,18 +965,28 @@ option {
     flex-wrap: wrap;
   }
   .card__description .difficulty {
-    width: 50%;
+    width: 90%;
   }
   .card__description .duration {
-    width: 25%;
+    width: 35%;
   }
   .card__description .foundYear {
-    width: 25%;
+    width: 55%;
   }
   .card__description .repeatings {
-    width: 25%;
+    width: 35%;
   }
   .card__description .link {
-    width: 25%;
+    width: 55%;
+  }
+  .informationBlock {
+    width: 80%;
+  }
+  .levels {
+    margin-top: 1rem;
+    width: 75%;
+  }
+  .year {
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
