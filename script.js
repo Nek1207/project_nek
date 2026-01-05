@@ -1,3 +1,27 @@
+const difficultyTitle = {
+    "fatal": `<h3 id="fatalTitle" class="fatal">fatal difficulty</h3>`,
+    "extreme": `<h3 id="extremeTitle" class="extreme">extreme difficulty</h3>`,
+    "atrocious": `<h3 id="atrociousTitle" class="atrocious">atrocious difficulty</h3>`,
+    "insane": `<h3 id="insaneTitle" class="insane">insane difficulty</h3>`,
+    "harsher": `<h3 id="harsherTitle" class="harsher">harsher difficulty</h3>`,
+    "harsh": `<h3 id="harshTitle" class="harsh">harsh difficulty</h3>`,
+    "medium": `<h3 id="mediumTitle" class="medium">medium difficulty</h3>`,
+    "normal": `<h3 id="normalTitle" class="normal">normal difficulty</h3>`,
+    "easy": `<h3 id="easyTitle" class="easy">easy difficulty</h3>`,
+    "pacific": `<h3 id="pacificTitle" class="pacific">pacific difficulty</h3>`,
+};
+
+const fatalTitle = document.getElementById('fatalTitle');
+const extremeTitle = document.getElementById('extremeTitle');
+const atrociousTitle = document.getElementById('atrociousTitle');
+const insaneTitle = document.getElementById('insaneTitle');
+const harsherTitle = document.getElementById('harsherTitle');
+const harshTitle = document.getElementById('harshTitle');
+const mediumTitle = document.getElementById('mediumTitle');
+const normalTitle = document.getElementById('normalTitle');
+const easyTitle = document.getElementById('easyTitle');
+const pacificTitle = document.getElementById('pacificTitle');
+
 const modal = document.getElementById("modal");
 const openBtn = document.getElementById("openModalBtn");
 // const closeBtn = document.getElementById("closeModalBtn");
@@ -6,7 +30,6 @@ const ModalBtnOK = document.getElementById("ModalBtnOK");
 const isBasedSolely = document.getElementById('isBasedSolely');
 
 const duration = document.querySelectorAll('.duration');
-const foundYear = document.querySelectorAll('.foundYear');
 const repeatings = document.querySelectorAll('.repeatings');
 const link = document.querySelectorAll('.link');
 
@@ -31,6 +54,34 @@ isBasedSolely.addEventListener("click", () => {
 
 
 });
+
+const showHideTitles = document.getElementById('showHideTitles');
+
+showHideTitles.addEventListener('click', () => {
+  showHideTitles.classList.toggle('active');
+  const isActive = showHideTitles.classList.contains('active');
+  console.log(isActive);
+  showHideTitles.textContent = isActive ? 'Show titles' : 'Hide titles';
+
+  if (isActive) {
+    fatalTitle.style.display = 'none';
+    extremeTitle.style.display = 'none';
+    atrociousTitle.style.display = 'none';
+    insaneTitle.style.display = 'none';
+    harsherTitle.style.display = 'none';
+    harshTitle.style.display = 'none';
+    mediumTitle.style.display = 'none';
+  } else {
+    fatalTitle.style.display = 'block';
+    extremeTitle.style.display = 'block';
+    atrociousTitle.style.display = 'block';
+    insaneTitle.style.display = 'block';
+    harsherTitle.style.display = 'block';
+    harshTitle.style.display = 'block';
+    mediumTitle.style.display = 'block';
+  }
+});
+
 
 const levels = document.querySelector('levels');
 const logotype = document.getElementById('logotype');
