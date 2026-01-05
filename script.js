@@ -73,10 +73,11 @@ function getCurrentThemeIndex() {
 
 function setTheme(index) {
   const theme = themes[index];
+  const label = labels[index];
   
   localStorage.setItem('theme', theme);
   html.setAttribute('data-theme', theme);
-  themeToggle.innerHTML = `<div id="colorMode" class="${theme}"></div>`;
+  themeToggle.innerHTML = `<div id="colorMode" class="${theme}"></div> ${label}`;
   // themeToggle.textContent = `${labels[index]}`;
 
   if (theme === "light") {
