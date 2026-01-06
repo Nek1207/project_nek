@@ -335,6 +335,7 @@ h5 {
 }
 
 .title {
+  margin-top: 10rem;
   width: 100%;
   user-select: none;
 }
@@ -940,12 +941,12 @@ option {
 }
 @media (max-width: 600px) {
   #colorMode {
-    width: 10px;
-    height: 10px;
-    margin: 0.2rem;
+    width: 13px;
+    height: 13px;
+    margin: 0.4rem;
   }
   #themeToggle {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   img, .circle {
     width: 15px;
@@ -1032,5 +1033,23 @@ option {
   }
   .year {
     width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .navigation__links {
+    width: 35%;
+    gap: 0.5rem;
+  }
+  .navigation__controls {
+    width: 25%;
+    gap: 0.5rem;
+  }
+  #colorMode {
+    width: 10px;
+    height: 10px;
+    margin: 0.2rem 0.2rem 0.2rem 0.4rem;
+  }
+  #themeToggle {
+    font-size: 0.3rem;
   }
 }/*# sourceMappingURL=styles.css.map */

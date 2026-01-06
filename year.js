@@ -211,6 +211,7 @@ showHideTitles.addEventListener('click', () => {
     harsherTitle.style.display = 'none';
     harshTitle.style.display = 'none';
     mediumTitle.style.display = 'none';
+    normalTitle.style.display = 'none';
 
 
   } else {
@@ -221,6 +222,7 @@ showHideTitles.addEventListener('click', () => {
     harsherTitle.style.display = 'block';
     harshTitle.style.display = 'block';
     mediumTitle.style.display = 'block';
+    normalTitle.style.display = 'block';
 
 
   }

@@ -229,6 +229,7 @@ h5 {
     margin-bottom: -1.5rem;
 }
 .title {
+    margin-top: 10rem;
     width: 100%;
     user-select: none;
     // min-height: 50px;
@@ -785,12 +786,12 @@ option {
 
 @media (max-width: 600px) {
     #colorMode {
-        width: 10px;
-        height: 10px;
-        margin: .2rem;
+        width: 13px;
+        height: 13px;
+        margin: .4rem;
     }
     #themeToggle {
-        font-size: .5rem;
+        font-size: 1rem;
     }
     img, .circle {
         width: 15px;
@@ -870,4 +871,22 @@ option {
         width: 100%;
     }
 
+}
+@media (max-width: 400px) {
+    .navigation__links {
+        width: 35%;
+        gap: .5rem;
+    }
+    .navigation__controls {
+        width: 25%;
+        gap: .5rem; 
+    }
+    #colorMode {
+        width: 10px;
+        height: 10px;
+        margin: .2rem .2rem .2rem .4rem;
+    }
+    #themeToggle {
+        font-size: .3rem;
+    }
 }

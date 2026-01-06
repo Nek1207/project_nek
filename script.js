@@ -19,8 +19,8 @@ const harsherTitle = document.getElementById('harsherTitle');
 const harshTitle = document.getElementById('harshTitle');
 const mediumTitle = document.getElementById('mediumTitle');
 const normalTitle = document.getElementById('normalTitle');
-const easyTitle = document.getElementById('easyTitle');
-const pacificTitle = document.getElementById('pacificTitle');
+// const easyTitle = document.getElementById('easyTitle');
+// const pacificTitle = document.getElementById('pacificTitle');
 
 const modal = document.getElementById("modal");
 const openBtn = document.getElementById("openModalBtn");
