@@ -3,6 +3,28 @@ const fastList = document.getElementById('fast');
 
 const card = document.querySelectorAll('.card');
     
+const range = document.getElementById('heightRange');
+const heightValue = document.getElementById('heightValue');
+
+card.forEach(element => {
+    element.style.height = '200px';
+});
+
+// При изменении ползунка
+range.addEventListener('input', (e) => {
+  const height = e.target.value;
+  
+  card.forEach(element => {
+    element.style.height = height + 'px';
+  });
+  // обновляем высоту карточки
+
+  
+  // показываем текущее значение
+  heightValue.textContent = height;
+});
+
+
 const foundYear = document.querySelectorAll('.foundYear');
     
 const foundYearClean = [];
