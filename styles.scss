@@ -77,8 +77,11 @@ select:open {
   border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
   background: var(--black);
 }
+
 ::search-text {
   background: var(--white);
 //   background: linear-gradient(90deg, #fef3c7, #fed7aa, #fef3c7);
@@ -125,7 +128,7 @@ select:open {
     linear-gradient(190deg, var(--white) 0%, var(--black) 20%);
     border-left: 2px solid $gray;
     border-bottom: 2px solid $gray;
-  border-bottom: none;
+    border-bottom: none;
 }
 
 select::picker-icon {
@@ -148,16 +151,20 @@ option {
     justify-content: start;
     align-items: start;
     gap: 0;
+    width: 100%;
+}
+.progressbar label {
+    font-size: .75rem;
 }
 
 progress {
     transition: all .25s;
     transform: translateY(0rem);
     width: 100%;
-    border-radius: 1.5rem;
-    height: 1.5rem;
+    border-radius: 1rem;
+    height: 1rem;
     margin: 0;
-    margin-top: 1rem;
+    margin-top: .5rem;
     padding: 0;   
     overflow: hidden;
     border: none;
@@ -196,7 +203,10 @@ progress::-webkit-progress-value {
   left: 0;
   background: var(--white);
 //   background-color: $gray;
-  border-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 0;
 }
 
 
@@ -217,6 +227,27 @@ option::checkmark {
   transition: all .4s;
   content: '✓';
   right: 1rem;
+}
+
+@media (max-width: 1200px) {
+    select:open {
+        border-bottom: none;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    ::picker(select) {
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        background: 
+        linear-gradient(-100deg, var(--white) 0%, var(--black) 20%);
+        border-left: 2px solid $gray;
+        border-bottom: 2px solid $gray;
+    }
 }
 
 
@@ -277,6 +308,7 @@ body, ol, ul {
     width: 100%;
     overflow-x: hidden;
 }
+body { padding-bottom: 4rem; }
 ol, ul { background: none; overflow-y: hidden; }
 .card {
     opacity: 0;
@@ -603,6 +635,7 @@ h5 {
 ol h3 {
     font-size: 3rem;
 }
+
 #detailed h3 {
     text-align: left;
 }
@@ -618,11 +651,10 @@ ol h3 {
     text-align: left;
     justify-content: start;
     align-items: start;
-    width: 70%;
+    width: 85%;
     gap: .5rem;
-    padding-left: 2rem !important;
-} 
-
+    padding-left: 3.5rem !important;
+}
 .line {
     position: relative;
     color: var(--black);

@@ -13,5 +13,5 @@ const interval = setInterval(() => {
   progress.value = value;
   percent = (progress.value / progress.max) * 100;
   value += 1;
-  if (value >= 311+2) clearInterval(interval);
+  if (value >= 333+2) clearInterval(interval);
 }, 1);
