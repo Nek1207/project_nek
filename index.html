@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emotional music tracks rating list</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./images/logo.svg" sizes="16x16">
 </head>
 <body>
 
@@ -40,9 +41,15 @@
     <main class="detailedMusicMain">
 
     <div class="informationBlock">
-        <div class="levels">
-            <img src="./images/levels.svg" alt="levels" class="whiteIcon levels-img">
-            <img src="./images/levels_alt.svg" alt="levels" class="darkIcon levels-img"> 
+        <div class="informations">
+            <div class="levels">
+                <img src="./images/levels.svg" alt="levels" class="whiteIcon levels-img">
+                <img src="./images/levels_alt.svg" alt="levels" class="darkIcon levels-img">
+            </div>
+            <div class="progressbar">
+                <label for-="progress">tracks total — <span id="progressValue">0</span> / 1,000</label>
+                <progress value="0" max="1000"></progress>
+            </div>
         </div>
         <div class="options">
             <div class="years">
@@ -71,9 +78,9 @@
 
     <ol id="detailed">
 
-        <h3 id="fatalTitle" class="fatal">fatal difficulty</h3>
+        <h3 id="fatalTitle" class="fatal smoothscrolling hidden">fatal difficulty</h3>
 
-        <div class="card">
+        <div class="card visible">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">Autism</span></h1></li>
@@ -94,7 +101,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card visible">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">Dark Side of Equestria Finale</span></h1></li>
@@ -115,7 +122,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card visible">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">Action Theme 3/3</span></h1></li>
@@ -136,7 +143,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card visible">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">+7 (r╨○░*◘∙○◌҈҉҈҉҉҉҈҈҉҈҈҈҈҈҈҉҉҉҉҉҉҈҈҉҉֢֢֢֢֢֢֢֢֡֡֡֡֡֡֡֡Ֆ҈҈҈҉҈҄҄҄҄҄҃҃ 455237Bx○♦7)</span></h1></li>
@@ -157,7 +164,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -182,7 +189,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -207,7 +214,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -232,7 +239,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -258,7 +265,7 @@
         </div>
 
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -283,7 +290,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -308,10 +315,10 @@
             </div>
         </div>
         
-        <h3 id="extremeTitle" class="extreme">extreme difficulty</h3>
+        <h3 id="extremeTitle" class="extreme smoothscrolling hidden">extreme difficulty</h3>
 
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -336,7 +343,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -361,7 +368,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -386,7 +393,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -411,7 +418,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -436,7 +443,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -461,7 +468,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -486,7 +493,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -511,7 +518,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -536,7 +543,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -561,7 +568,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -586,7 +593,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -611,7 +618,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -636,7 +643,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -661,7 +668,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -686,9 +693,9 @@
             </div>
         </div>
 
-        <h3 id="atrociousTitle" class="atrocious">atrocious difficulty</h3>
+        <h3 id="atrociousTitle" class="atrocious smoothscrolling hidden">atrocious difficulty</h3>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -713,7 +720,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -738,7 +745,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -764,7 +771,7 @@
         </div>
 
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -789,7 +796,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -814,7 +821,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -839,7 +846,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -864,7 +871,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -889,7 +896,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -914,7 +921,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -939,7 +946,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -964,7 +971,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -990,7 +997,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1015,7 +1022,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1040,7 +1047,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1065,7 +1072,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1090,7 +1097,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1115,7 +1122,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1140,7 +1147,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1165,7 +1172,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1190,7 +1197,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1215,7 +1222,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1240,7 +1247,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1265,7 +1272,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1290,7 +1297,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1315,9 +1322,9 @@
             </div>
         </div>
 
-        <h3 id="insaneTitle" class="insane">insane difficulty</h3>
+        <h3 id="insaneTitle" class="insane smoothscrolling hidden">insane difficulty</h3>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1342,7 +1349,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1367,7 +1374,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1392,7 +1399,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1417,7 +1424,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1442,7 +1449,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1467,7 +1474,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1492,7 +1499,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1517,7 +1524,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1542,7 +1549,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1567,7 +1574,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1592,7 +1599,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1617,7 +1624,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1642,7 +1649,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1667,7 +1674,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1692,7 +1699,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1717,7 +1724,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1742,7 +1749,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1767,7 +1774,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1792,7 +1799,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1817,7 +1824,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1842,7 +1849,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1867,7 +1874,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1892,7 +1899,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1917,7 +1924,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1942,7 +1949,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1967,7 +1974,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -1992,7 +1999,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2017,7 +2024,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2042,7 +2049,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2067,7 +2074,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2092,7 +2099,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2117,7 +2124,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2142,7 +2149,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2167,7 +2174,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2192,9 +2199,9 @@
             </div>
         </div>
 
-        <h3 id="harsherTitle" class="harsher">harsher difficulty</h3>
+        <h3 id="harsherTitle" class="harsher smoothscrolling hidden">harsher difficulty</h3>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2219,7 +2226,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2244,7 +2251,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2269,7 +2276,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2294,7 +2301,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2319,7 +2326,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2344,7 +2351,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2369,7 +2376,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2394,7 +2401,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2419,7 +2426,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2444,7 +2451,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2469,7 +2476,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2494,7 +2501,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2519,7 +2526,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2544,7 +2551,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2569,7 +2576,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2594,7 +2601,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2619,7 +2626,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2644,7 +2651,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2669,7 +2676,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2694,7 +2701,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2719,7 +2726,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2744,7 +2751,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2769,7 +2776,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2794,7 +2801,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2819,7 +2826,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2844,7 +2851,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2869,7 +2876,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2894,7 +2901,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2919,7 +2926,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2944,7 +2951,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2969,7 +2976,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -2994,7 +3001,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3019,7 +3026,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3044,7 +3051,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3069,9 +3076,9 @@
             </div>
         </div>
 
-        <h3 id="harshTitle" class="harsh">harsh difficulty</h3>
+        <h3 id="harshTitle" class="harsh smoothscrolling hidden">harsh difficulty</h3>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3096,7 +3103,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3121,7 +3128,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3146,7 +3153,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3171,7 +3178,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3196,7 +3203,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3221,7 +3228,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3246,7 +3253,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3271,7 +3278,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3296,7 +3303,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3321,7 +3328,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3346,7 +3353,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3371,7 +3378,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3396,7 +3403,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3421,7 +3428,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3446,7 +3453,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3471,7 +3478,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3496,7 +3503,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3521,7 +3528,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3546,7 +3553,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3571,7 +3578,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3596,7 +3603,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3621,7 +3628,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3646,7 +3653,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3671,7 +3678,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3696,7 +3703,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3721,7 +3728,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3746,7 +3753,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3771,7 +3778,7 @@
             </div>
         </div> 
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3796,7 +3803,7 @@
             </div>
         </div>
 
-         <div class="card">
+         <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3821,7 +3828,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3846,7 +3853,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3871,7 +3878,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3896,7 +3903,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3921,7 +3928,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3946,7 +3953,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3971,7 +3978,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -3996,7 +4003,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4021,7 +4028,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4046,7 +4053,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4071,7 +4078,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4096,7 +4103,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4121,7 +4128,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4146,7 +4153,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4171,7 +4178,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4196,7 +4203,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4221,7 +4228,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4246,7 +4253,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4271,7 +4278,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4296,7 +4303,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4321,7 +4328,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4346,7 +4353,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4371,7 +4378,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4396,7 +4403,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4421,7 +4428,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4446,9 +4453,9 @@
             </div>
         </div> 
 
-        <h3 id="mediumTitle" class="medium">medium difficulty</h3>
+        <h3 id="mediumTitle" class="medium smoothscrolling hidden">medium difficulty</h3>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4474,7 +4481,7 @@
         </div> 
 
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4499,7 +4506,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4524,7 +4531,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4549,7 +4556,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4574,7 +4581,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4599,7 +4606,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4624,7 +4631,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4649,7 +4656,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4674,7 +4681,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4699,7 +4706,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4724,7 +4731,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4749,7 +4756,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4774,7 +4781,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4799,7 +4806,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4824,7 +4831,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4849,7 +4856,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4874,7 +4881,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4899,7 +4906,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4924,7 +4931,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4949,7 +4956,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4974,7 +4981,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -4999,7 +5006,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5024,7 +5031,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5049,7 +5056,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5074,7 +5081,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5099,7 +5106,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5124,7 +5131,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5149,7 +5156,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5174,7 +5181,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5199,7 +5206,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5224,7 +5231,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5249,7 +5256,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5274,7 +5281,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5299,7 +5306,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5324,7 +5331,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5349,7 +5356,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner"> 
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5374,7 +5381,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5399,7 +5406,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5424,7 +5431,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5449,7 +5456,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5474,7 +5481,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5499,7 +5506,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5524,7 +5531,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5549,7 +5556,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5574,7 +5581,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5599,7 +5606,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5624,7 +5631,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5649,7 +5656,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5674,7 +5681,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5699,7 +5706,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5724,7 +5731,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5749,7 +5756,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5774,7 +5781,7 @@
             </div>
         </div>  
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5799,7 +5806,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5824,7 +5831,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5849,7 +5856,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5874,7 +5881,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5899,7 +5906,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5924,7 +5931,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5949,7 +5956,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5974,7 +5981,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -5999,7 +6006,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6024,7 +6031,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6049,7 +6056,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6074,7 +6081,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6099,7 +6106,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6124,7 +6131,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6149,7 +6156,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6174,7 +6181,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6199,7 +6206,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6224,7 +6231,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6249,7 +6256,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6274,7 +6281,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6299,7 +6306,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6324,9 +6331,9 @@
             </div>
         </div>
 
-        <h3 class="normal" id="normalTitle">normal difficulty</h3>
+        <h3 class="normal" id="normalTitle smoothscrolling hidden">normal difficulty</h3>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6351,7 +6358,7 @@
             </div>
         </div>
         
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6376,7 +6383,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6401,7 +6408,7 @@
             </div>
         </div>
         
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6426,7 +6433,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6451,7 +6458,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6476,7 +6483,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6501,7 +6508,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6526,7 +6533,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6551,7 +6558,7 @@
             </div>
         </div>
         
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6576,7 +6583,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6601,7 +6608,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6626,7 +6633,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6651,7 +6658,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6676,7 +6683,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6701,7 +6708,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6726,7 +6733,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6751,7 +6758,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6776,7 +6783,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6801,7 +6808,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6826,7 +6833,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6851,7 +6858,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6876,7 +6883,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6901,7 +6908,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6926,7 +6933,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6951,7 +6958,7 @@
             </div>
         </div>
         
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -6976,7 +6983,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7001,7 +7008,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7026,7 +7033,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7051,7 +7058,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7076,7 +7083,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7101,7 +7108,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7126,7 +7133,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7151,7 +7158,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7176,7 +7183,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7201,7 +7208,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7226,7 +7233,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7251,7 +7258,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7276,7 +7283,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7301,7 +7308,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7326,7 +7333,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7351,7 +7358,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7376,7 +7383,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7401,7 +7408,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7426,7 +7433,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7451,7 +7458,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7476,7 +7483,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7501,7 +7508,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7526,7 +7533,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7551,7 +7558,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7576,7 +7583,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7601,7 +7608,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7626,7 +7633,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7651,7 +7658,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7676,7 +7683,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7701,7 +7708,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7726,7 +7733,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7751,7 +7758,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7776,7 +7783,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7801,7 +7808,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7826,7 +7833,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7855,7 +7862,7 @@
 
 
 
-        <!-- <div class="card">
+        <!-- <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
@@ -7887,6 +7894,8 @@
     </main>
 
     <script src="./script.js"></script>
+    <script src="./progress.js"></script>
+    <script src="./smoothscrolling.js"></script>
     <script src="./year.js"></script>
 </body>
 </html>

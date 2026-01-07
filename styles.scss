@@ -14,6 +14,9 @@ $atrocious: #4F0D51;
 $extreme: #FF006E;
 $fatal: #80FFDB;
 
+$grad1: #7F298240;
+$grad2: #FF006E40;
+
 $themes: (
   light: (
     white: #0F0F0F,
@@ -41,6 +44,9 @@ $themes: (
   }
 }
 
+::-webkit-scrollbar { width: 1rem; }
+::-webkit-scrollbar-thumb { background: var(--white); }
+
 
 .white { color: var(--white); }
 .black { color: var(--black); }
@@ -55,6 +61,163 @@ $themes: (
 .atrocious { color: $atrocious; }
 .extreme { color: $extreme; }
 .fatal { color: $fatal; }
+
+select,
+::picker(select) {
+  transition: all .4s;
+  appearance: base-select; /* включает кастом */
+}
+
+select {
+  transition: all .4s;
+  font-size: .8rem;
+}
+
+select:open {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: var(--black);
+}
+::search-text {
+  background: var(--white);
+//   background: linear-gradient(90deg, #fef3c7, #fed7aa, #fef3c7);
+  padding: 2px 4px;
+  border-radius: 1.5rem;
+  font-weight: 600;
+}
+
+/* Анимация появления */
+::search-text {
+  animation: highlight 0.3s ease-in-out;
+}
+
+
+@keyframes highlight {
+  0% { background: transparent; transform: scale(0.95); }
+  50% { background: var(--white); transform: scale(1.02); }
+  100% { background: var(--white); }
+}
+::search-text {
+  transition: all 0.2s ease;
+  font-size: 1.1em;
+  background: var(--white);
+  color: var(--black);
+}
+/* Hover при фокусе поиска */
+::search-text:hover,
+::search-text:focus-within {
+  background: var(--white);
+  color: var(--black);
+}
+
+
+::picker(select) {
+  transition: all .4s;
+  border: none;
+  border-radius: .75rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: var(--black);
+  color: var(--white);
+  box-shadow: none;
+  background: 
+    linear-gradient(190deg, var(--white) 0%, var(--black) 20%);
+    border-left: 2px solid $gray;
+    border-bottom: 2px solid $gray;
+  border-bottom: none;
+}
+
+select::picker-icon {
+  transition: all .4s;
+  content: '▼';
+  right: 1;
+  color: var(--white);
+  transition: transform 0.2s;
+}
+option { 
+  font-size: .8rem;
+  padding: .25rem .25rem .25rem 1rem;
+  color: var(--white) !important;
+}
+
+.progressbar {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0;
+}
+
+progress {
+    transition: all .25s;
+    transform: translateY(0rem);
+    width: 100%;
+    border-radius: 1.5rem;
+    height: 1.5rem;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;   
+    overflow: hidden;
+    border: none;
+}
+
+.progressbarText {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+
+progress:hover {
+    transition: all .25s;
+    transform: translateY(-.15rem);
+}
+
+progress::-webkit-progress-bar {
+    padding: 0;
+    margin: 0;
+    background: 
+    linear-gradient(182deg, var(--white) 0%, var(--black) 35%);
+    border-left: 2px solid $gray;
+    border-bottom: 2px solid $gray;
+}
+
+progress::-webkit-progress-value {
+    position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  background: var(--white);
+//   background-color: $gray;
+  border-radius: 1.5rem;
+}
+
+
+select:open::picker-icon {
+  transition: all .4s;
+  transform: rotate(180deg);
+    color: var(--white);
+}
+option:checked {
+  transition: all .4s;
+  background: linear-gradient(90deg, $grad1 0%, $grad2 100%);
+  color: var(--white);
+}
+
+option::checkmark {
+  position: absolute;
+  color: var(--white);
+  transition: all .4s;
+  content: '✓';
+  right: 1rem;
+}
 
 
 .circle {
@@ -95,7 +258,6 @@ $themes: (
 .fatal .line { background-color: $fatal; }
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -113,9 +275,11 @@ body, ol, ul {
     align-items: center;
     gap: 0rem;
     width: 100%;
+    overflow-x: hidden;
 }
-ol, ul { background: none; }
+ol, ul { background: none; overflow-y: hidden; }
 .card {
+    opacity: 0;
     transition: all .25s;
     transform: translateY(0rem);
     margin: 0 auto;
@@ -214,7 +378,14 @@ h2 {
     border-radius: 1.5rem;
     transform: translateY(0rem);
 }
-
+.informations, .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+}
 .years {
     width: 100%;
     display: flex;
@@ -317,9 +488,40 @@ h5 {
     // min-height: 50px;
 }
 .title img {
+    opacity: 0;
+    animation: imageAppearance forwards 1s 1s 1 ease-in-out;
     width: 100%;
     height: 100%;
 }
+
+#fatalTitle {
+    opacity: 0;
+    animation: imageAppearance forwards 1s 1.5s 1 ease-in-out;
+}
+
+@keyframes imageAppearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 #detailed {
     width: 100%;
     gap: 2rem;
@@ -747,17 +949,15 @@ label {
         width: 90%;
         gap: 1rem;
     }
-    .levels {
-        margin-top: 2rem;
-        width: 25%;
+    .informations {
+        width: 60%;
     }
     .options {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        gap: 0;
-        width: 50%;
+        width: 40%;
+    }
+    .levels {
+        margin-top: 0;
+        width: 40%;
     }
     .year {
         width: 100%;
@@ -953,11 +1153,10 @@ label {
         width: 80%;
     }
     .levels {
-        margin-top: 1rem;
-        width: 35%;
+        width: 70%;
     }
     .options {
-        width: 60%;
+        width: 55%;
     }
     .year {
         width: 100%;
