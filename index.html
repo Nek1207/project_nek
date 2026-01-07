@@ -44,24 +44,29 @@
             <img src="./images/levels.svg" alt="levels" class="whiteIcon levels-img">
             <img src="./images/levels_alt.svg" alt="levels" class="darkIcon levels-img"> 
         </div>
-        <select name="year" class="year">
-            <option value="All">All</option>
-            <option value="2025">2025</option>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2017">2017</option>
-        </select>
-        <button id="setYear" onclick="setYear()">Confirm</button>
-        <button id="showHideTitles" class="showHideTitlesBtn" type="button">Hide titles</button>
-        <div class="range-control">
-            <label for="heightRange">card height: <span id="heightValue">200</span>px</label>
-            <input type="range" id="heightRange" min="100" max="260" value="200" step="10">
+        <div class="options">
+            <div class="years">
+                <select name="year" class="year">
+                    <option value="All">All</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                </select>
+                <button id="setYear" onclick="setYear()">Confirm</button>
+            </div>
+            <button id="showHideTitles" class="showHideTitlesBtn" type="button">Hide titles</button>
+            <div class="range-control">
+                <label for="heightRange">card height: <span id="heightValue">200</span>px</label>
+                <input type="range" id="heightRange" min="80" max="260" value="200" step="10">
+            </div>
         </div>
+        
     </div>
 
     <ol id="detailed">
@@ -545,7 +550,7 @@
                     <div class="duration"><img class="lighticon" src="./images/time.svg"><img class="darkicon" src="./images/time_alt.svg"> 
                     3:12</div>
                     <div class="foundYear"><img class="lightIcon" src="./images/date.svg"><img class="darkIcon" src="./images/date_alt.svg"> 
-                    2020</div>
+                    2022</div>
                     <div class="repeatings"><img class="lighticon" src="./images/repeat.svg"><img class="darkicon" src="./images/repeat_alt.svg"> 
                     94</div>
                     <div class="link">

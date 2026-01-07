@@ -59,7 +59,7 @@
 }
 
 .atrocious {
-  color: #2D0C2F;
+  color: #4F0D51;
 }
 
 .extreme {
@@ -120,7 +120,7 @@
 }
 
 .atrocious .circle {
-  background-color: #2D0C2F;
+  background-color: #4F0D51;
 }
 
 .extreme .circle {
@@ -172,7 +172,7 @@
 }
 
 .atrocious .line {
-  background-color: #2D0C2F;
+  background-color: #4F0D51;
 }
 
 .extreme .line {
@@ -203,6 +203,10 @@ body, ol, ul {
   width: 100%;
 }
 
+ol, ul {
+  background: none;
+}
+
 .card {
   transition: all 0.25s;
   transform: translateY(0rem);
@@ -223,16 +227,17 @@ body, ol, ul {
 .card__inner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 100%;
   gap: 1rem;
 }
 
 .card:nth-child(2) {
   background: linear-gradient(190deg, #662E9B 0%, var(--black) 35%);
   border-left: 4px solid #662E9B;
-  border-bottom: 4px solid #2D0C2F;
+  border-bottom: 4px solid #4F0D51;
 }
 
 .card:nth-child(3) {
@@ -294,7 +299,7 @@ h2 {
   align-items: start;
   gap: 2rem;
   width: 90%;
-  padding: 3rem;
+  padding: 1rem;
   margin-top: 3rem;
 }
 
@@ -311,6 +316,13 @@ h2 {
   border-bottom: 2px solid #4F4F4F;
   border-radius: 1.5rem;
   transform: translateY(0rem);
+}
+
+.years {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .levels:hover {
@@ -343,12 +355,6 @@ h5 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: -1.5rem;
-}
-
-.title {
-  margin-top: 10rem;
-  width: 100%;
-  user-select: none;
 }
 
 .navigation {
@@ -412,6 +418,18 @@ h5 {
   height: 100%;
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  margin: 10rem 0 0 0;
+  width: 100vw;
+  user-select: none;
+}
+
 .title img {
   width: 100%;
   height: 100%;
@@ -458,7 +476,7 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   width: 100%;
   gap: 1rem;
   height: 100px;
@@ -699,6 +717,10 @@ button:active {
   border-bottom: 2px solid #4F4F4F;
 }
 
+#setYear {
+  margin-top: 0;
+}
+
 #setYear:hover,
 #showHideTitles:hover {
   transition: all 0.25s;
@@ -819,7 +841,7 @@ label {
     color: #FF006E;
   }
   20% {
-    color: #2D0C2F;
+    color: #4F0D51;
   }
   30% {
     color: #7F2982;
@@ -879,13 +901,22 @@ label {
   }
   .informationBlock {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 90%;
+    gap: 1rem;
   }
   .levels {
     margin-top: 2rem;
+    width: 25%;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0;
     width: 50%;
   }
   .year {
@@ -993,7 +1024,7 @@ label {
     padding: 1rem 1rem 1rem 4.5rem;
   }
   .detailedMusicMain {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 }
 @media (max-width: 600px) {
@@ -1010,15 +1041,17 @@ label {
     height: 15px;
   }
   #detailed {
-    padding: 0;
+    padding: 0 0 0 0.5rem;
     margin: 0;
   }
   .detailedMusicMain {
     padding: 0;
+    width: 100%;
   }
   .card {
     padding: 0.85rem 0.85rem 0.85rem 4.5rem;
     width: 90vw;
+    min-height: 80px;
     height: auto;
   }
   #detailed li {
@@ -1085,10 +1118,16 @@ label {
   }
   .levels {
     margin-top: 1rem;
-    width: 75%;
+    width: 35%;
+  }
+  .options {
+    width: 60%;
   }
   .year {
     width: 100%;
+  }
+  .card__inner {
+    gap: 0.25rem;
   }
 }
 @media (max-width: 400px) {
