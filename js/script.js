@@ -27,9 +27,7 @@ const repeatings = document.querySelectorAll('.repeatings');
 const link = document.querySelectorAll('.link');
 
 
-const whiteIcon = document.querySelectorAll('.whiteicon, .whiteIcon, .lightIcon, .lighticon');
-const darkIcon = document.querySelectorAll('.darkicon, .darkIcon');
-const OLEDIcon = document.querySelectorAll('.OLEDIcon, .OLEDicon, .oledicon');
+
 const youtubeLink = document.querySelectorAll('.youtube');
 const yandexMusicLink = document.querySelectorAll('.yandexMusic');
 const bandcampLink = document.querySelectorAll('.bandcampLink');
@@ -49,11 +47,18 @@ isBasedSolely.addEventListener("click", () => {
 });
 
 
+const whiteIcon = document.querySelectorAll('.whiteicon, .whiteIcon, .lightIcon, .lighticon');
+const darkIcon = document.querySelectorAll('.darkicon, .darkIcon');
+const OLEDIcon = document.querySelectorAll('.OLEDIcon, .OLEDicon, .oledicon, .oledIcon');
+
+console.log(whiteIcon);
+console.log(darkIcon);
+console.log(OLEDIcon);
 
 const levels = document.querySelector('levels');
 const logotype = document.getElementById('logotype');
 const title = document.getElementById('title');
-const prjctnkLogotype = document.getElementById('prjctnkLogotype');
+// const prjctnkLogotype = document.getElementById('prjctnkLogotype');
 const themeToggle = document.getElementById('themeToggle');
 // const colorMode = document.getElementById('colorMode');
 const html = document.documentElement;
@@ -79,7 +84,7 @@ function setTheme(index) {
     openBtn.innerHTML = `<img src="./images/information_alt.svg">`;
     logotype.innerHTML = `<img src="./images/logo_alt.svg">`;
     title.innerHTML = `<img src="./images/title_light.svg">`;
-    prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo-alt.svg">`;
+    // prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo-alt.svg">`;
     
     whiteIcon.forEach(element => {
       element.style.display = 'none';
@@ -97,7 +102,7 @@ function setTheme(index) {
     openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
     title.innerHTML = `<img src="./images/title_dark.svg">`; 
-    prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo.svg">`;
+    // prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo.svg">`;
 
     whiteIcon.forEach(element => {
       element.style.display = 'block';
@@ -114,7 +119,7 @@ function setTheme(index) {
     openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
     title.innerHTML = `<img src="./images/title_oled.svg">`;
-    prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo.svg">`;
+    // prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo.svg">`;
 
     whiteIcon.forEach(element => {
       element.style.display = 'block';
@@ -123,7 +128,7 @@ function setTheme(index) {
       element.style.display = 'none';
     }); 
     OLEDIcon.forEach(element => {
-      element.style.display = 'block';
+      element.style.display = 'none';
     }); 
   }
 

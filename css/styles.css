@@ -1531,9 +1531,6 @@ label {
   }
 }
 @media (max-width: 400px) {
-  .card__description div img {
-    margin-right: 0.1rem;
-  }
   .card__description {
     gap: 0.5rem;
   }
@@ -1542,6 +1539,7 @@ label {
     font-size: 0.15rem !important;
   }
   .card__description div img {
+    margin-right: 0.1rem !important;
     width: 10px;
     height: 10px;
   }
@@ -1549,13 +1547,13 @@ label {
     width: 90%;
   }
   .card__description .duration {
-    width: 15%;
+    width: 17.5%;
   }
   .card__description .foundYear {
-    width: 15%;
+    width: 17.5%;
   }
   .card__description .repeatings {
-    width: 15%;
+    width: 17.5%;
   }
   .card__description .link {
     width: 35%;
