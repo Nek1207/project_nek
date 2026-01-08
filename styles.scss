@@ -537,7 +537,7 @@ h5 {
     width: 60%;
     height: 60%;
     // animation: logoRotation 10s 5s infinite cubic-bezier(1.00, 0.00, 0.83, 0.96);
-    animation: spinStep 4s steps(16) infinite;
+    animation: spinStep 1s 3s steps(4) infinite; 
 }
 #logotype img:hover {
     transition: all 3s;
@@ -558,25 +558,7 @@ h5 {
 //     }
 // }
 
-@keyframes logoRotation {
-    from { rotate: 0; }
-    6% { rotate: 22.5deg; }
-    12% { rotate: 45deg; }
-    18% { rotate: 67.5deg; }
-    24% { rotate: 90deg; }
-    30% { rotate: 112.5deg; }
-    36% { rotate: 135deg; }
-    42% { rotate: 157.5deg; }
-    48% { rotate: 180deg; }
-    54% { rotate: 202.5deg; }
-    60% { rotate: 225deg; }
-    66% { rotate: 247.5deg; }
-    72% { rotate: 270deg; }
-    78% { rotate: 295.5deg; }
-    84% { rotate: 315deg; }
-    93% { rotate: 337.5deg; }
-    to { rotate: 360deg; }
-}
+
 .navigation__links {
     width: 60%;
     height: 100%;
