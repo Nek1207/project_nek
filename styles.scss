@@ -580,8 +580,12 @@ h5 {
     transition: all .3s ease !important;
 }
     
+.burger-line:nth-child(1) {
+    margin-top: .35rem !important;
+}
+
 .burger.active .burger-line:nth-child(1) {
-    transform: rotate(45deg) translate(.5rem, .6rem) !important;
+    transform: rotate(45deg) translate(.25rem, .6rem) !important;
 }
     
 .burger.active .burger-line:nth-child(2) {
@@ -589,7 +593,7 @@ h5 {
 }
     
 .burger.active .burger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(.5rem, -.6rem) !important;
+    transform: rotate(-45deg) translate(.25rem, -.6rem) !important;
 }
     
 .nav {
