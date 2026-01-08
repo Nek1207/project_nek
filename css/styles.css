@@ -618,7 +618,7 @@ h5 {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  min-height: 50px;
+  min-height: 100px;
   height: auto;
   gap: 0;
   margin: 0;
@@ -627,12 +627,13 @@ h5 {
 }
 
 #logotype {
+  transition: all 0.25s;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 35%;
-  height: 100px;
+  width: 15%;
+  height: 85px;
   color: var(--white);
   font-size: 1rem;
   font-weight: 700;
@@ -640,10 +641,78 @@ h5 {
 }
 
 #logotype img {
-  width: 65%;
-  height: 65%;
+  rotate: 0deg;
+  width: 60%;
+  height: 60%;
+  animation: spinStep 4s steps(16) infinite;
 }
 
+#logotype img:hover {
+  transition: all 3s;
+  animation: none;
+}
+
+@keyframes spinStep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes logoRotation {
+  from {
+    rotate: 0;
+  }
+  6% {
+    rotate: 22.5deg;
+  }
+  12% {
+    rotate: 45deg;
+  }
+  18% {
+    rotate: 67.5deg;
+  }
+  24% {
+    rotate: 90deg;
+  }
+  30% {
+    rotate: 112.5deg;
+  }
+  36% {
+    rotate: 135deg;
+  }
+  42% {
+    rotate: 157.5deg;
+  }
+  48% {
+    rotate: 180deg;
+  }
+  54% {
+    rotate: 202.5deg;
+  }
+  60% {
+    rotate: 225deg;
+  }
+  66% {
+    rotate: 247.5deg;
+  }
+  72% {
+    rotate: 270deg;
+  }
+  78% {
+    rotate: 295.5deg;
+  }
+  84% {
+    rotate: 315deg;
+  }
+  93% {
+    rotate: 337.5deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
 .navigation__links {
   width: 60%;
   height: 100%;
@@ -666,6 +735,11 @@ h5 {
 .navigation__logo {
   width: 100%;
   height: 100%;
+}
+
+#prjctnkLogotype {
+  margin-top: 10vw;
+  width: 40%;
 }
 
 .burger {
@@ -782,6 +856,12 @@ h5 {
 }
 
 #fatalTitle {
+  opacity: 0;
+  animation: imageAppearance forwards 1s 1.5s 1 ease-in-out;
+}
+
+.indev__texts h1,
+.indev__texts h2 {
   opacity: 0;
   animation: imageAppearance forwards 1s 1.5s 1 ease-in-out;
 }
@@ -1496,8 +1576,43 @@ label {
   .card__inner {
     gap: 0.25rem;
   }
+  #themeToggle {
+    width: 25%;
+  }
+  .burger-line:nth-child(1) {
+    margin-top: 0 !important;
+  }
 }
 @media (max-width: 400px) {
+  .card__description div img {
+    margin-right: 0.1rem;
+  }
+  .card__description {
+    gap: 0.5rem;
+  }
+  .card__description div,
+  .card__description .link a {
+    font-size: 0.15rem !important;
+  }
+  .card__description div img {
+    width: 10px;
+    height: 10px;
+  }
+  .card__description .difficulty {
+    width: 90%;
+  }
+  .card__description .duration {
+    width: 15%;
+  }
+  .card__description .foundYear {
+    width: 15%;
+  }
+  .card__description .repeatings {
+    width: 15%;
+  }
+  .card__description .link {
+    width: 35%;
+  }
   .navigation__links {
     width: 35%;
     gap: 0.5rem;
@@ -1514,4 +1629,30 @@ label {
   #themeToggle {
     font-size: 0.3rem;
   }
+}
+.indev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+  min-height: 800px;
+  height: auto;
+}
+
+#prjctnkLogotypeTextless {
+  margin: 0;
+}
+
+.indev__texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+
+#prjctnkLogotypeTextless {
+  width: 30%;
 }/*# sourceMappingURL=styles.css.map */

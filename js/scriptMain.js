@@ -15,12 +15,8 @@ const difficultyTitle = {
 // const easyTitle = document.getElementById('easyTitle');
 // const pacificTitle = document.getElementById('pacificTitle');
 
-const modal = document.getElementById("modal");
-const openBtn = document.getElementById("openModalBtn");
-// const closeBtn = document.getElementById("closeModalBtn");
-const ModalBtnOK = document.getElementById("ModalBtnOK");
 
-const isBasedSolely = document.getElementById('isBasedSolely');
+
 
 const duration = document.querySelectorAll('.duration');
 const repeatings = document.querySelectorAll('.repeatings');
@@ -35,24 +31,9 @@ const yandexMusicLink = document.querySelectorAll('.yandexMusic');
 const bandcampLink = document.querySelectorAll('.bandcampLink');
 const vkLink = document.querySelectorAll('.vkLink');
 
-isBasedSolely.addEventListener("click", () => {
-  
-  if (isBasedSolely.classList.contains('omg')) {
-    isBasedSolely.classList.remove("omg");
-    isBasedSolely.innerText = 'is based solely';
-  } else {
-    isBasedSolely.classList.add("omg");
-    isBasedSolely.innerText = 'GO TO LISTEN THAT SHIT BABE';
-  }
-
-
-});
-
-
 
 const levels = document.querySelector('levels');
 const logotype = document.getElementById('logotype');
-const title = document.getElementById('title');
 const prjctnkLogotype = document.getElementById('prjctnkLogotype');
 const themeToggle = document.getElementById('themeToggle');
 // const colorMode = document.getElementById('colorMode');
@@ -76,9 +57,7 @@ function setTheme(index) {
 
   if (theme === "light") {
     console.log('image light');
-    openBtn.innerHTML = `<img src="./images/information_alt.svg">`;
     logotype.innerHTML = `<img src="./images/logo_alt.svg">`;
-    title.innerHTML = `<img src="./images/title_light.svg">`;
     prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo-alt.svg">`;
     
     whiteIcon.forEach(element => {
@@ -94,9 +73,7 @@ function setTheme(index) {
   }
   if (theme === "dark") {
     console.log('image dark');
-    openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
-    title.innerHTML = `<img src="./images/title_dark.svg">`; 
     prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo.svg">`;
 
     whiteIcon.forEach(element => {
@@ -111,9 +88,7 @@ function setTheme(index) {
   }
   if (theme === "oled") {
     console.log('image oled');
-    openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
-    title.innerHTML = `<img src="./images/title_oled.svg">`;
     prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo.svg">`;
 
     whiteIcon.forEach(element => {
@@ -138,39 +113,6 @@ themeToggle.addEventListener('click', () => {
 setTheme(getCurrentThemeIndex());
 
 
-
-// открыть модалку
-function openModal() {
-  modal.classList.add("show");
-  // фокус на кнопку закрытия (для удобства)
-  // closeBtn.focus();
-}
-
-// закрыть модалку
-function closeModal() {
-  modal.classList.remove("show");
-  // вернуть фокус на кнопку открытия
-  openBtn.focus();
-}
-
-openBtn.addEventListener("click", openModal);
-// closeBtn.addEventListener("click", closeModal);
-ModalBtnOK.addEventListener("click", closeModal);
-
-// клик по фону
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    closeModal();
-  }
-});
-
-// Esc для закрытия
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && modal.classList.contains("show")) {
-    closeModal();
-  }
-  
-});
 
 const scrollTopBtn = document.getElementById('scrollTop');
 const SCROLL_THRESHOLD = 100; // показывать после 100px
