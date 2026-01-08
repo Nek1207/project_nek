@@ -11,15 +11,20 @@
 
     <nav class="navigation">
         <a id="logotype" target="_blank" href="https://t.me/project_nek_official"><img src="./images/logo.svg"></a>
-        <div class="navigation__links">
-            <a href="./index.html">music list detailed</a>
-            <a href="./top100fast.html">music list fast</a>
+        <div class="nav navigation__links" id="navMenu">
+            <a class="nav-link" href="./index.html">music list detailed</a>
+            <a class="nav-link" href="./top100fast.html">music list fast</a>
         </div>
         <div class="navigation__controls">
             <button class="open-modal" id="openModalBtn"><img src="./images/information.svg" alt="info"></button>
             <button id="themeToggle" class="theme-toggle" type="button" data-state="0"></button>
+            <button class="burger" id="burgerBtn">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
         </div>
-
+        
     </nav>
 
     <div class="modal" id="modal">
@@ -39,6 +44,8 @@
     </div>
 
     <main class="detailedMusicMain">
+
+        <button id="scrollTop" class="scroll-top" title="Наверх">↑</button>
 
     <div class="informationBlock">
         <div class="informations">
@@ -64,6 +71,7 @@
                     <option value="2019">2019</option>
                     <option value="2018">2018</option>
                     <option value="2017">2017</option>
+                    <option value="2010">2010</option>
                 </select>
                 <button id="setYear" onclick="setYear()">Confirm</button>
             </div>
@@ -6209,6 +6217,31 @@
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
+                        Запретить</span></h1></li>
+                    <h2>by <span class="authorName">
+                        SLAVA MARLOW</span></h2>
+                </div>
+                <div class="card__description">
+                    <div class="difficulty medium"><div class="circle">.</div> 
+                    medium</div>
+                    <div class="duration"><img class="lighticon" src="./images/time.svg"><img class="darkicon" src="./images/time_alt.svg"> 
+                    3:04</div>
+                    <div class="foundYear"><img class="lightIcon" src="./images/date.svg"><img class="darkIcon" src="./images/date_alt.svg"> 
+                    2024</div>
+                    <div class="repeatings"><img class="lighticon" src="./images/repeat.svg"><img class="darkicon" src="./images/repeat_alt.svg"> 
+                    22</div>
+                    <div class="link">
+                        <a target="_blank" href="https://youtu.be/nE0LqrB-vvY?si=n47oeMK9fAfQ1HLi">
+                        <img class="lighticon" src="./images/youtube.svg"><img class="darkicon" src="./images/youtube_alt.svg">
+                    youtube</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card smoothscrolling hidden">
+            <div class="card__inner">
+                <div class="card__title">
+                    <li><h1><span class="trackName">
                         Bass Slut</span></h1></li>
                     <h2>by <span class="authorName">
                         S3RL</span></h2>
@@ -6305,6 +6338,8 @@
             </div>
         </div>
 
+        <h3 class="normal smoothscrolling hidden" id="normalTitle">normal difficulty</h3>
+
         <div class="card smoothscrolling hidden">
             <div class="card__inner">
                 <div class="card__title">
@@ -6314,8 +6349,8 @@
                         АИГЕЛ</span></h2>
                 </div>
                 <div class="card__description">
-                    <div class="difficulty medium"><div class="circle">.</div> 
-                    medium</div>
+                    <div class="difficulty normal"><div class="circle">.</div> 
+                    normal</div>
                     <div class="duration"><img class="lighticon" src="./images/time.svg"><img class="darkicon" src="./images/time_alt.svg"> 
                     5:14</div>
                     <div class="foundYear"><img class="lightIcon" src="./images/date.svg"><img class="darkIcon" src="./images/date_alt.svg"> 
@@ -6329,8 +6364,6 @@
                 </div>
             </div>
         </div>
-        
-        <h3 class="normal" id="normalTitle smoothscrolling hidden">normal difficulty</h3>
 
         <div class="card smoothscrolling hidden">
             <div class="card__inner">
@@ -6551,6 +6584,31 @@
                     24</div>
                     <div class="link">
                         <a target="_blank" href="https://youtu.be/FukeNR1ydOA?si=rpcVuKT8Jl1QQa4u">
+                        <img class="lighticon" src="./images/youtube.svg"><img class="darkicon" src="./images/youtube_alt.svg">
+                    youtube</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card smoothscrolling hidden">
+            <div class="card__inner">
+                <div class="card__title">
+                    <li><h1><span class="trackName">
+                        Rumble</span></h1></li>
+                    <h2>by <span class="authorName">
+                        Skrillex, Fred again.. & Flowdan</span></h2>
+                </div>
+                <div class="card__description">
+                    <div class="difficulty normal"><div class="circle">.</div> 
+                    normal</div>
+                    <div class="duration"><img class="lighticon" src="./images/time.svg"><img class="darkicon" src="./images/time_alt.svg"> 
+                    2:26</div>
+                    <div class="foundYear"><img class="lightIcon" src="./images/date.svg"><img class="darkIcon" src="./images/date_alt.svg"> 
+                    2025</div>
+                    <div class="repeatings"><img class="lighticon" src="./images/repeat.svg"><img class="darkicon" src="./images/repeat_alt.svg"> 
+                    13</div>
+                    <div class="link">
+                        <a target="_blank" href="https://youtu.be/7z25ZZ3DHds?si=uj08BpG9AsPx3NTT">
                         <img class="lighticon" src="./images/youtube.svg"><img class="darkicon" src="./images/youtube_alt.svg">
                     youtube</a></div>
                 </div>
@@ -7611,6 +7669,31 @@
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
+                        Blackjack</span></h1></li>
+                    <h2>by <span class="authorName">
+                        Death Grips</span></h2>
+                </div>
+                <div class="card__description">
+                    <div class="difficulty normal"><div class="circle">.</div> 
+                    normal</div>
+                    <div class="duration"><img class="lighticon" src="./images/time.svg"><img class="darkicon" src="./images/time_alt.svg"> 
+                    4:05</div>
+                    <div class="foundYear"><img class="lightIcon" src="./images/date.svg"><img class="darkIcon" src="./images/date_alt.svg"> 
+                    2018</div>
+                    <div class="repeatings"><img class="lighticon" src="./images/repeat.svg"><img class="darkicon" src="./images/repeat_alt.svg"> 
+                    20 </div>
+                    <div class="link">
+                        <a target="_blank" href="https://youtu.be/WpxZdL2hQVc?si=He_siUfrzqJ-9TDT">
+                        <img class="lighticon" src="./images/youtube.svg"><img class="darkicon" src="./images/youtube_alt.svg">
+                    youtube</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card smoothscrolling hidden">
+            <div class="card__inner">
+                <div class="card__title">
+                    <li><h1><span class="trackName">
                         Drown</span></h1></li>
                     <h2>by <span class="authorName">
                         Bring Me The Horizon</span></h2>
@@ -7836,6 +7919,31 @@
             <div class="card__inner">
                 <div class="card__title">
                     <li><h1><span class="trackName">
+                        Machina</span></h1></li>
+                    <h2>by <span class="authorName">
+                        Dex Arson</span></h2>
+                </div>
+                <div class="card__description">
+                    <div class="difficulty normal"><div class="circle">.</div> 
+                    normal</div>
+                    <div class="duration"><img class="lighticon" src="./images/time.svg"><img class="darkicon" src="./images/time_alt.svg"> 
+                    4:01</div>
+                    <div class="foundYear"><img class="lightIcon" src="./images/date.svg"><img class="darkIcon" src="./images/date_alt.svg"> 
+                    2017</div>
+                    <div class="repeatings"><img class="lighticon" src="./images/repeat.svg"><img class="darkicon" src="./images/repeat_alt.svg"> 
+                    33</div>
+                    <div class="link">
+                        <a target="_blank" href="https://youtu.be/EWjZOxs87yg?si=ona82XBsYGA22fyN">
+                        <img class="lighticon" src="./images/youtube.svg"><img class="darkicon" src="./images/youtube_alt.svg">
+                    youtube</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card smoothscrolling hidden">
+            <div class="card__inner">
+                <div class="card__title">
+                    <li><h1><span class="trackName">
                         улыбка</span></h1></li>
                     <h2>by <span class="authorName">
                         Skryptonite</span></h2>
@@ -8051,6 +8159,56 @@
                     19</div>
                     <div class="link">
                         <a target="_blank" href="https://youtu.be/GAw5dRl3Z6I?si=XsTlD4c4NMCF95TO">
+                        <img class="lighticon" src="./images/youtube.svg"><img class="darkicon" src="./images/youtube_alt.svg">
+                    youtube</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card smoothscrolling hidden">
+            <div class="card__inner">
+                <div class="card__title">
+                    <li><h1><span class="trackName">
+                        Nine Circles</span></h1></li>
+                    <h2>by <span class="authorName">
+                        NIGHTkilla</span></h2>
+                </div>
+                <div class="card__description">
+                    <div class="difficulty normal"><div class="circle">.</div> 
+                    normal</div>
+                    <div class="duration"><img class="lighticon" src="./images/time.svg"><img class="darkicon" src="./images/time_alt.svg"> 
+                    3:23</div>
+                    <div class="foundYear"><img class="lightIcon" src="./images/date.svg"><img class="darkIcon" src="./images/date_alt.svg"> 
+                    2015</div>
+                    <div class="repeatings"><img class="lighticon" src="./images/repeat.svg"><img class="darkicon" src="./images/repeat_alt.svg"> 
+                    22</div>
+                    <div class="link">
+                        <a target="_blank" href="https://youtu.be/2ftEN3CzbuE?si=cajIW-bHNenIEglA">
+                        <img class="lighticon" src="./images/youtube.svg"><img class="darkicon" src="./images/youtube_alt.svg">
+                    youtube</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card smoothscrolling hidden">
+            <div class="card__inner">
+                <div class="card__title">
+                    <li><h1><span class="trackName">
+                        Vanished</span></h1></li>
+                    <h2>by <span class="authorName">
+                        Crystal Castles</span></h2>
+                </div>
+                <div class="card__description">
+                    <div class="difficulty normal"><div class="circle">.</div> 
+                    normal</div>
+                    <div class="duration"><img class="lighticon" src="./images/time.svg"><img class="darkicon" src="./images/time_alt.svg"> 
+                    4:02</div>
+                    <div class="foundYear"><img class="lightIcon" src="./images/date.svg"><img class="darkIcon" src="./images/date_alt.svg"> 
+                    2021</div>
+                    <div class="repeatings"><img class="lighticon" src="./images/repeat.svg"><img class="darkicon" src="./images/repeat_alt.svg"> 
+                    25</div>
+                    <div class="link">
+                        <a target="_blank" href="https://youtu.be/6e6Hj7MwWaI?si=TtTXIZ2G-7McxUDK">
                         <img class="lighticon" src="./images/youtube.svg"><img class="darkicon" src="./images/youtube_alt.svg">
                     youtube</a></div>
                 </div>
@@ -8444,6 +8602,7 @@
 
     <script src="./script.js"></script>
     <script src="./progress.js"></script>
+    <script src="./burger.js"></script>
     <script src="./smoothscrolling.js"></script>
     <script src="./year.js"></script>
 </body>

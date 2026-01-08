@@ -11,14 +11,7 @@ const difficultyTitle = {
     "pacific": `<h3 id="pacificTitle" class="pacific">pacific difficulty</h3>`,
 };
 
-const fatalTitle = document.getElementById('fatalTitle');
-const extremeTitle = document.getElementById('extremeTitle');
-const atrociousTitle = document.getElementById('atrociousTitle');
-const insaneTitle = document.getElementById('insaneTitle');
-const harsherTitle = document.getElementById('harsherTitle');
-const harshTitle = document.getElementById('harshTitle');
-const mediumTitle = document.getElementById('mediumTitle');
-const normalTitle = document.getElementById('normalTitle');
+
 // const easyTitle = document.getElementById('easyTitle');
 // const pacificTitle = document.getElementById('pacificTitle');
 
@@ -173,4 +166,24 @@ document.addEventListener("keydown", (e) => {
     closeModal();
   }
   
+});
+
+const scrollTopBtn = document.getElementById('scrollTop');
+const SCROLL_THRESHOLD = 100; // показывать после 100px
+
+// Показать/скрыть кнопку при скролле
+window.addEventListener('scroll', () => {
+  if (window.scrollY > SCROLL_THRESHOLD) {
+    scrollTopBtn.classList.add('show');
+  } else {
+    scrollTopBtn.classList.remove('show');
+  }
+});
+
+// Плавный скролл наверх
+scrollTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
