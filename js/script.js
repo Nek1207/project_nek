@@ -31,7 +31,7 @@ let repeatingsCount = 0;
 repeatings.forEach((span, index) => {
   repeatingsList[index] = span.textContent.trim();
   repeatingsCount += parseInt(repeatingsList[index]);
-  repeatingsTotal.innerText = `Repeatings total - ${repeatingsCount}`;
+  repeatingsTotal.innerHTML = `Repeatings total - <span class="harsher">${repeatingsCount}</span>`;
 });
 
 
