@@ -26,6 +26,17 @@ const duration = document.querySelectorAll('.duration');
 const repeatings = document.querySelectorAll('.repeatings');
 const link = document.querySelectorAll('.link');
 
+const repeatingsList = [];
+let repeatingsCount = 0;
+repeatings.forEach((span, index) => {
+  repeatingsList[index] = span.textContent.trim();
+  repeatingsCount += parseInt(repeatingsList[index]);
+  repeatingsTotal.innerText = `Repeatings total - ${repeatingsCount}`;
+});
+
+
+// console.log(repeatingsCount);
+
 
 
 const youtubeLink = document.querySelectorAll('.youtube');
@@ -80,7 +91,7 @@ function setTheme(index) {
   // themeToggle.textContent = `${labels[index]}`;
 
   if (theme === "light") {
-    console.log('image light');
+    // console.log('image light');
     openBtn.innerHTML = `<img src="./images/information_alt.svg">`;
     logotype.innerHTML = `<img src="./images/logo_alt.svg">`;
     title.innerHTML = `<img src="./images/title_light.svg">`;
@@ -98,7 +109,7 @@ function setTheme(index) {
 
   }
   if (theme === "dark") {
-    console.log('image dark');
+    // console.log('image dark');
     openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
     title.innerHTML = `<img src="./images/title_dark.svg">`; 
@@ -115,7 +126,7 @@ function setTheme(index) {
     }); 
   }
   if (theme === "oled") {
-    console.log('image oled');
+    // console.log('image oled');
     openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
     title.innerHTML = `<img src="./images/title_oled.svg">`;

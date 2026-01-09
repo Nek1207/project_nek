@@ -24,8 +24,15 @@ range.addEventListener('input', (e) => {
   heightValue.textContent = height;
 });
 
+const fresh = `<div class="fresh"><span class="freshTitle">fresh</span></div>`;
 
+const trackName = document.querySelectorAll('.trackName');
+
+  
 const foundYear = document.querySelectorAll('.foundYear');
+
+
+
     
 const foundYearClean = [];
 
@@ -33,10 +40,12 @@ function foundYearRefresh() {
     foundYearClean.length = 0;
     foundYear.forEach((element, index) => {
         if (card[index].style.display != 'none') { foundYearClean[index] = element.innerText.trim(); }
+        if (foundYearClean[index] == '2026') { element.innerHTML += fresh; trackName[index].style.width = '75%'; }
     });
     // console.log(foundYearClean);
 }
 
+foundYearRefresh();
 
 function setYear() {
     foundYearRefresh();
@@ -366,7 +375,7 @@ document.querySelectorAll('.authorName').forEach((span, index) => {
   authors[index] = span.textContent.trim();
 });
 
-console.log(authors);
+// console.log(authors);
 
 
 function searchTracksByAuthor() {
@@ -374,6 +383,9 @@ function searchTracksByAuthor() {
     const searchInput = document.getElementById('searchInput');
 
 
+    searchMenu.innerHTML = `<p>The next similar examples will appear here.</p>`;
+
+    
     if (searchInput.value.length === 0) {
         console.log('lenght = 0');
     } else {
