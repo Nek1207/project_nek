@@ -51,9 +51,9 @@ const whiteIcon = document.querySelectorAll('.whiteicon, .whiteIcon, .lightIcon,
 const darkIcon = document.querySelectorAll('.darkicon, .darkIcon');
 const OLEDIcon = document.querySelectorAll('.OLEDIcon, .OLEDicon, .oledicon, .oledIcon');
 
-console.log(whiteIcon);
-console.log(darkIcon);
-console.log(OLEDIcon);
+// console.log(whiteIcon);
+// console.log(darkIcon);
+// console.log(OLEDIcon);
 
 const levels = document.querySelector('levels');
 const logotype = document.getElementById('logotype');

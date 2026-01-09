@@ -37,9 +37,9 @@ function foundYearRefresh() {
     // console.log(foundYearClean);
 }
 
-foundYearRefresh();
 
 function setYear() {
+    foundYearRefresh();
 
     const year = document.querySelector('.year');
     // console.log(year.value);
@@ -227,6 +227,7 @@ function setYear() {
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
     foundYearRefresh();
+    HideTitles();
     }
     else if (year.value == "2018") {
     card.forEach((element, index) => {
@@ -250,6 +251,7 @@ function setYear() {
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
     foundYearRefresh();
+    HideTitles();
     }  
     else if (year.value == "2017") {
     card.forEach((element, index) => {
@@ -273,6 +275,7 @@ function setYear() {
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
     foundYearRefresh();
+    HideTitles();
     }
     else if (year.value == "2010") {
     card.forEach((element, index) => {
@@ -296,6 +299,7 @@ function setYear() {
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
     foundYearRefresh();
+    HideTitles();
     } else {
         console.log("fuck off!"); 
     }
@@ -312,6 +316,7 @@ const harsherTitle = document.getElementById('harsherTitle');
 const harshTitle = document.getElementById('harshTitle');
 const mediumTitle = document.getElementById('mediumTitle');
 const normalTitle = document.getElementById('normalTitle');
+const easyTitle = document.getElementById('easyTitle');
 const showHideTitles = document.getElementById('showHideTitles');
 
 showHideTitles.addEventListener('click', () => {
@@ -321,6 +326,14 @@ showHideTitles.addEventListener('click', () => {
   showHideTitles.textContent = isActive ? 'Show titles' : 'Hide titles';
 
   if (isActive) {
+    HideTitles();
+  } else {
+    showTitles();
+  }
+});
+
+
+function HideTitles() {
     fatalTitle.style.display = 'none';
     extremeTitle.style.display = 'none';
     atrociousTitle.style.display = 'none';
@@ -329,9 +342,10 @@ showHideTitles.addEventListener('click', () => {
     harshTitle.style.display = 'none';
     mediumTitle.style.display = 'none';
     normalTitle.style.display = 'none';
-    
+    easyTitle.style.display = 'none';
+}
 
-  } else {
+function showTitles() {
     fatalTitle.style.display = 'block';
     extremeTitle.style.display = 'block';
     atrociousTitle.style.display = 'block';
@@ -340,7 +354,38 @@ showHideTitles.addEventListener('click', () => {
     harshTitle.style.display = 'block';
     mediumTitle.style.display = 'block';
     normalTitle.style.display = 'block';
+    easyTitle.style.display = 'block';
+}
 
 
-  }
+
+
+const authors = [];
+
+document.querySelectorAll('.authorName').forEach((span, index) => {
+  authors[index] = span.textContent.trim();
 });
+
+console.log(authors);
+
+
+function searchTracksByAuthor() {
+
+    const searchInput = document.getElementById('searchInput');
+
+
+    if (searchInput.value.length === 0) {
+        console.log('lenght = 0');
+    } else {
+        card.forEach((element, index) => {
+            if (authors[index] == searchInput.value) {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+
+            }
+        });
+    }
+    HideTitles();
+
+}

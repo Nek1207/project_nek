@@ -5,8 +5,8 @@
             sections.forEach(section => {
                 // Проверяем видимую область элемента относительно окна просмотра
                 if (isInViewport(section)) {
-                    section.classList.remove('hiddenOthers');
-                    section.classList.add('visibleOthers');
+                    section.classList.remove('hidden');
+                    section.classList.add('visible');
                 }
             });
         }
@@ -16,8 +16,8 @@
             return (
                 rect.top >= 0 &&
                 rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight * 0.85 || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth * 0.85 || document.documentElement.clientWidth)
+                rect.bottom <= (window.innerHeight * 1 || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth * 1 || document.documentElement.clientWidth)
             );
         }
 
