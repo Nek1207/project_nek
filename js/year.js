@@ -69,7 +69,6 @@ function foundYearRefresh() {
     // console.log(foundYearClean);
 }
 
-foundYearRefresh();
 
 function setYear() {
     // foundYearRefresh();
