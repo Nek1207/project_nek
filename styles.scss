@@ -1488,6 +1488,13 @@ label {
 }
 
 @media (max-width: 600px) {
+    #fast {
+        width: 90%;
+        padding: 2rem !important;
+    }
+    #fast li {
+        font-size: .5rem;
+    }
     ::-webkit-scrollbar { display: none; }
     ::-webkit-scrollbar-thumb { display: none; }
     .no-scrollbar {
