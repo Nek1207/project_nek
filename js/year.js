@@ -31,29 +31,53 @@ const trackName = document.querySelectorAll('.trackName');
   
 const foundYear = document.querySelectorAll('.foundYear');
 
-
+const trackNameTitles = document.querySelectorAll('.card__title'); 
 
     
-const foundYearClean = [];
+let foundYearClean = [];
+
+const year = document.querySelector('.year');
+let yearInts = []; 
 
 function foundYearRefresh() {
     foundYearClean.length = 0;
     foundYear.forEach((element, index) => {
-        if (card[index].style.display != 'none') { foundYearClean[index] = element.innerText.trim(); }
-        if (foundYearClean[index] == '2026') { element.innerHTML += fresh; trackName[index].style.width = '75%'; }
+        if (card[index].style.display != 'none') {
+            foundYearClean[index] = element.innerText.trim();
+        }
     });
+    yearInts = foundYearClean.map(num => parseInt(num, 10));
+    console.log(yearInts);
+    foundYear.forEach((element, index) => {
+
+        if (year.value < 2026) {
+            if (yearInts[index] == 2026) {
+                card[index].style.display = 'none';
+            } else {
+                card[index].style.display = 'flex';
+
+            }
+        }  else {
+            if (yearInts[index] == 2026) {
+                element.innerHTML += fresh;
+                trackNameTitles[index].style.width = '85%';
+            }
+        }
+        
+    });
+    
     // console.log(foundYearClean);
 }
 
 foundYearRefresh();
 
 function setYear() {
-    foundYearRefresh();
+    // foundYearRefresh();
 
-    const year = document.querySelector('.year');
     // console.log(year.value);
 
     if (year.value == "All") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'block'; }
@@ -74,9 +98,9 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     }
     else if (year.value == "2025") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -97,9 +121,9 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     }
     else if (year.value == "2024") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -120,9 +144,9 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     }
     else if (year.value == "2023") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -143,9 +167,9 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     }
     else if (year.value == "2022") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -166,9 +190,9 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     }
     else if (year.value == "2021") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -189,9 +213,9 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     }
     else if (year.value == "2020") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -212,9 +236,9 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     }
     else if (year.value == "2019") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -235,10 +259,10 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     HideTitles();
     }
     else if (year.value == "2018") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -259,10 +283,10 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     HideTitles();
     }  
     else if (year.value == "2017") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -283,10 +307,34 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
+    HideTitles();
+    }
+    else if (year.value == "2014") {
     foundYearRefresh();
+    card.forEach((element, index) => {
+        if (foundYearClean[index] == null) { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2025") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2024") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2023") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2022") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2021") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2020") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2019") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2018") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2017") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2016") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2015") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2014") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2013") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+    });
     HideTitles();
     }
     else if (year.value == "2010") {
+    foundYearRefresh();
     card.forEach((element, index) => {
         if (foundYearClean[index] == null) { element.style.display = 'block'; }
         if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
@@ -307,7 +355,6 @@ function setYear() {
         if (foundYearClean[index] == "2011") { element.style.display = 'none'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
     });
-    foundYearRefresh();
     HideTitles();
     } else {
         console.log("fuck off!"); 
