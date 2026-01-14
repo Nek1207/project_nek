@@ -610,7 +610,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    min-height: 100px;
+    min-height: 70px;
     height: auto;
     gap: 0;
     margin: 0;
@@ -624,7 +624,7 @@ h5 {
     justify-content: center;
     align-items: center;
     width: 15%;
-    height: 85px;
+    height: 65px;
     color: var(--white);
     font-size: 1rem;
     font-weight: 700;
@@ -818,7 +818,7 @@ h5 {
 
 .nav {
     position: fixed;
-    top: 102px;
+    top: 82px;
     right: 0;
     background: var(--mobileHeader);
     backdrop-filter: blur(1rem);
@@ -860,9 +860,9 @@ h5 {
         transform: none !important;
         background: transparent !important;
         height: auto !important;
-        flex-direction: row !important;;
-        justify-content: space-around !important;;
-        align-items: center !important;;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center !important;
         gap: 2rem;
         padding: 0;
     }
