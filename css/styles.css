@@ -456,7 +456,7 @@ ol, ul {
   width: 75%;
   border-radius: 1.5rem;
   min-height: 100px;
-  height: 200px;
+  height: 175px;
   max-height: 400px;
   padding: 1rem 2rem 1rem 5rem;
   color: var(--white);
@@ -492,13 +492,6 @@ ol, ul {
   background: linear-gradient(188deg, #ffd60a 0%, var(--black) 35%);
   border-left: 4px solid #ffd60a;
   border-bottom: 4px solid #ffc300;
-}
-
-.card.card:nth-child(2) .circle,
-.card.card:nth-child(3) .circle,
-.card.card:nth-child(4) .circle {
-  width: 15px;
-  height: 15px;
 }
 
 .card:hover {

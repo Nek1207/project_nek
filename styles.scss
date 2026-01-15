@@ -361,7 +361,7 @@ ol, ul { background: none; overflow-y: hidden; }
     width: 75%;
     border-radius: 1.5rem;
     min-height: 100px;
-    height: 200px;
+    height: 175px;
     max-height: 400px;
     padding: 1rem 2rem 1rem 5rem;   
     color: var(--white);
@@ -399,12 +399,12 @@ ol, ul { background: none; overflow-y: hidden; }
     border-bottom: 4px solid #ffc300;
 }
 
-.card.card:nth-child(2) .circle,
-.card.card:nth-child(3) .circle,
-.card.card:nth-child(4) .circle {
-    width: 15px;
-    height: 15px;
-}
+// .card.card:nth-child(2) .circle,
+// .card.card:nth-child(3) .circle,
+// .card.card:nth-child(4) .circle {
+//     width: 15px;
+//     height: 15px;
+// }
 .card:hover {
     transition: all .25s;
     transform: translateY(-.15rem);
