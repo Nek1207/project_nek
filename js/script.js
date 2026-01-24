@@ -129,7 +129,11 @@ function setTheme(index) {
     // console.log('image oled');
     openBtn.innerHTML = `<img src="./images/information.svg">`;
     logotype.innerHTML = `<img src="./images/logo.svg">`;
+
+
     title.innerHTML = `<img src="./images/title_oled.svg">`;
+
+    
     // prjctnkLogotype.innerHTML = `<img src="./images/prjctnk-logo.svg">`;
 
     whiteIcon.forEach(element => {

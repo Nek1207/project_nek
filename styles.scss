@@ -1834,3 +1834,12 @@ label {
     transform: translateY(0);
     transition: all 1s ease-in-out;
 }
+
+.pictureslist {
+    margin-top: 15vh;
+    font-size: 1.75rem;
+}
+
+.pictureslistfast {
+    display: none;
+}
