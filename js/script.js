@@ -1,3 +1,4 @@
+
 const difficultyTitle = {
     "fatal": `<h3 id="fatalTitle" class="fatal">fatal difficulty</h3>`,
     "extreme": `<h3 id="extremeTitle" class="extreme">extreme difficulty</h3>`,
@@ -22,8 +23,13 @@ const ModalBtnOK = document.getElementById("ModalBtnOK");
 
 const isBasedSolely = document.getElementById('isBasedSolely');
 
+const trackName = document.querySelectorAll('.trackName');
+const authorName = document.querySelectorAll('.authorName');
+const difficulty = document.querySelectorAll('.difficulty');
 const duration = document.querySelectorAll('.duration');
+const foundYear = document.querySelectorAll('.foundYear');
 const repeatings = document.querySelectorAll('.repeatings');
+const trackLink = document.querySelectorAll('.trackLink');
 const link = document.querySelectorAll('.link');
 
 const repeatingsList = [];
@@ -37,7 +43,74 @@ repeatings.forEach((span, index) => {
 
 // console.log(repeatingsCount);
 
+const trackTitles = [];
+trackName.forEach( (element, index) => {
+  trackTitles.push(element.innerText);
+});
 
+const trackAuthors = [];
+authorName.forEach( (element, index) => {
+  trackAuthors.push(element.innerText);
+});
+
+const trackDifficulties = [];
+difficulty.forEach( (element, index) => {
+  trackDifficulties.push(element.innerText);
+});
+
+const trackDurations = [];
+duration.forEach( (element, index) => {
+  trackDurations.push(element.innerText);
+});
+
+const trackYears = [];
+foundYear.forEach( (element, index) => {
+  trackYears.push(element.innerText);
+});
+
+const trackRepeatings = [];
+repeatings.forEach( (element, index) => {
+  trackRepeatings.push(element.innerText);
+});
+
+const tracksLinks = [];
+trackLink.forEach( (element, index) => {
+  tracksLinks.push(element.href);
+});
+
+
+// console.log("titles - ", trackTitles);
+// console.log("authors - ", trackAuthors);
+// console.log("difficulties - ", trackDifficulties);
+// console.log("durations - ", trackDurations);
+// console.log("years - ", trackYears);
+// console.log("repeatings - ", trackRepeatings);
+// console.log("links - ", tracksLinks);
+
+
+const tracksToJSON = trackTitles.map( (title, index) => ({
+  title: title,
+  author: trackAuthors[index],
+  difficulty: trackDifficulties[index],
+  duration: trackDurations[index],
+  year: parseInt(trackYears[index]),
+  repeatings: parseInt(trackRepeatings[index]),
+  link: tracksLinks[index]
+
+}));
+
+console.log(tracksToJSON);
+
+const jsonString = JSON.stringify(tracksToJSON, null, 2);
+const blob = new Blob([jsonString], { type: 'application/json' });
+const url = URL.createObjectURL(blob);
+const a = document.createElement('a');
+a.href = url;
+a.download = 'emtrlByPROJECTNEK.json';
+document.body.appendChild(a);
+a.click();
+document.body.removeChild(a);
+URL.revokeObjectURL(url);
 
 const youtubeLink = document.querySelectorAll('.youtube');
 const yandexMusicLink = document.querySelectorAll('.yandexMusic');

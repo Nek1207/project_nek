@@ -3,6 +3,9 @@ const repeatings = document.querySelectorAll('.repeatings');
 const link = document.querySelectorAll('.link');
 
 
+
+
+
 const whiteIcon = document.querySelectorAll('.whiteicon, .whiteIcon, .lightIcon, .lighticon');
 const darkIcon = document.querySelectorAll('.darkicon, .darkIcon');
 const OLEDIcon = document.querySelectorAll('.OLEDIcon, .OLEDicon, .oledicon');
