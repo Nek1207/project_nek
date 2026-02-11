@@ -30,7 +30,7 @@ const duration = document.querySelectorAll('.duration');
 const foundYear = document.querySelectorAll('.foundYear');
 const repeatings = document.querySelectorAll('.repeatings');
 const trackLink = document.querySelectorAll('.trackLink');
-const link = document.querySelectorAll('.link');
+const trackSource = document.querySelectorAll('.link');
 
 const repeatingsList = [];
 let repeatingsCount = 0;
@@ -78,6 +78,10 @@ trackLink.forEach( (element, index) => {
   tracksLinks.push(element.href);
 });
 
+const trackSources = [];
+trackSource.forEach( (element, index) => {
+  trackSources.push(element.innerText);
+});
 
 // console.log("titles - ", trackTitles);
 // console.log("authors - ", trackAuthors);
@@ -95,7 +99,8 @@ const tracksToJSON = trackTitles.map( (title, index) => ({
   duration: trackDurations[index],
   year: parseInt(trackYears[index]),
   repeatings: parseInt(trackRepeatings[index]),
-  link: tracksLinks[index]
+  link: tracksLinks[index],
+  source: trackSources[index]
 
 }));
 
