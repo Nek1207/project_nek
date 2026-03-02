@@ -106,16 +106,16 @@ const tracksToJSON = trackTitles.map( (title, index) => ({
 
 console.log(tracksToJSON);
 
-const jsonString = JSON.stringify(tracksToJSON, null, 2);
-const blob = new Blob([jsonString], { type: 'application/json' });
-const url = URL.createObjectURL(blob);
-const a = document.createElement('a');
-a.href = url;
-a.download = 'emtrlByPROJECTNEK.json';
-document.body.appendChild(a);
-a.click();
-document.body.removeChild(a);
-URL.revokeObjectURL(url);
+// const jsonString = JSON.stringify(tracksToJSON, null, 2);
+// const blob = new Blob([jsonString], { type: 'application/json' });
+// const url = URL.createObjectURL(blob);
+// const a = document.createElement('a');
+// a.href = url;
+// a.download = 'emtrlByPROJECTNEK.json';
+// document.body.appendChild(a);
+// a.click();
+// document.body.removeChild(a);
+// URL.revokeObjectURL(url);
 
 const youtubeLink = document.querySelectorAll('.youtube');
 const yandexMusicLink = document.querySelectorAll('.yandexMusic');
