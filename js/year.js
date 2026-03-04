@@ -26,10 +26,10 @@ range.addEventListener('input', (e) => {
 
 const fresh = `<div class="fresh"><span class="freshTitle">fresh</span></div>`;
 
-const trackName = document.querySelectorAll('.trackName');
+// const trackName = document.querySelectorAll('.trackName');
 
   
-const foundYear = document.querySelectorAll('.foundYear');
+// const foundYear = document.querySelectorAll('.foundYear');
 
 const trackNameTitles = document.querySelectorAll('.card__title'); 
 
