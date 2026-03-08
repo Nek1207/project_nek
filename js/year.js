@@ -7,7 +7,7 @@ const range = document.getElementById('heightRange');
 const heightValue = document.getElementById('heightValue');
 
 card.forEach(element => {
-    element.style.height = '200px';
+    element.style.height = '180px';
 });
 
 // При изменении ползунка
@@ -96,6 +96,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     }
     else if (year.value == "2025") {
@@ -119,6 +123,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     }
     else if (year.value == "2024") {
@@ -142,6 +150,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     }
     else if (year.value == "2023") {
@@ -165,6 +177,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     }
     else if (year.value == "2022") {
@@ -188,6 +204,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     }
     else if (year.value == "2021") {
@@ -211,6 +231,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     }
     else if (year.value == "2020") {
@@ -234,6 +258,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     }
     else if (year.value == "2019") {
@@ -257,6 +285,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     HideTitles();
     }
@@ -281,6 +313,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     HideTitles();
     }  
@@ -305,6 +341,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     HideTitles();
     }
@@ -329,6 +369,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     HideTitles();
     }
@@ -353,6 +397,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     HideTitles();
     }
@@ -377,6 +425,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     HideTitles();
     }
@@ -401,6 +453,10 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'block'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     HideTitles();
     }
@@ -425,6 +481,37 @@ function setYear() {
         if (foundYearClean[index] == "2012") { element.style.display = 'none'; }
         if (foundYearClean[index] == "2011") { element.style.display = 'none'; }
         if (foundYearClean[index] == "2010") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
+    });
+    HideTitles();
+    } else if (year.value == "2007") {
+    foundYearRefresh();
+    card.forEach((element, index) => {
+        if (foundYearClean[index] == null) { element.style.display = 'block'; }
+        if (foundYearClean[index] == "2026") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2025") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2024") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2023") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2022") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2021") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2020") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2019") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2018") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2017") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2016") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2015") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2014") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2013") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2012") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2011") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2010") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2009") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2008") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2007") { element.style.display = 'none'; }
+        if (foundYearClean[index] == "2006") { element.style.display = 'block'; }
     });
     HideTitles();
     } else {
@@ -444,6 +531,7 @@ const harshTitle = document.getElementById('harshTitle');
 const mediumTitle = document.getElementById('mediumTitle');
 const normalTitle = document.getElementById('normalTitle');
 const easyTitle = document.getElementById('easyTitle');
+const pacificTitle = document.getElementById('pacificTitle');
 const showHideTitles = document.getElementById('showHideTitles');
 
 showHideTitles.addEventListener('click', () => {
@@ -470,6 +558,7 @@ function HideTitles() {
     mediumTitle.style.display = 'none';
     normalTitle.style.display = 'none';
     easyTitle.style.display = 'none';
+    pacificTitle.style.display = 'none';
 }
 
 function showTitles() {
@@ -482,6 +571,7 @@ function showTitles() {
     mediumTitle.style.display = 'block';
     normalTitle.style.display = 'block';
     easyTitle.style.display = 'block';
+    pacificTitle.style.display = 'block';
 }
 
 
